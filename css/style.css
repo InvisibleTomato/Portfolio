@@ -1,0 +1,68 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+  cursor: none;
+}
+
+a:hover {
+  cursor: none;
+}
+
+body {
+  font-size: 1rem;
+  color: #0e0e0e;
+  background-color: #fdfdfd;
+}
+
+/*マウスカーソル*/
+.cursor {
+  position: fixed;
+  top: -120px;
+  left: -120px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: none;
+  background: #0e0e0e;
+  z-index: 1000;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, background 0.5s;
+}
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #52c1ff;
+  transition: background-color 0.5s;
+}
+
+/*aタグにホバーした際のスタイル変化*/
+.cursor.cursor--hover {
+  width: 24px;
+  height: 24px;
+  top: -12px;
+  left: -12px;
+  background: transparent;
+}
+.cursor.cursor--hover::after {
+  background-color: rgba(255, 215, 82, 0.7);
+}
+
+/*カーソル動き確認用ボタン*/
+.btn {
+  display: inline-block;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
