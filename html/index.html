@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio" />
     <meta name="robots" content="noindex" />
+    <!-- フォント読み込み -->
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- noto sans jp -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Portfolio</title>
@@ -14,7 +31,22 @@
     <div id="cursor" class="cursor"></div>
 
     <!-- メイン -->
-    <main></main>
+    <main>
+      <!-- タイトル -->
+      <section class="typing">
+        <div class="typing-effect hover-white">
+          <h1>I want to be invisible.</h1>
+        </div>
+      </section>
+
+      <section class="page-link">
+        <h2 class="hover-white">Portfolio</h2>
+        <ul>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./gallery-list.html">Gallery</a></li>
+        </ul>
+      </section>
+    </main>
 
     <!-- jsファイル読み込み -->
     <script src="../js/cursor.js"></script>
