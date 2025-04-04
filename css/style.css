@@ -58,12 +58,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-top: 270px;
+  margin-right: 856px;
 }
 
 .typing-effect {
-  width: 23ch;
-  animation: typing 2.5s steps(23) forwards, effect 0.5s step-end infinite alternate;
+  width: 20ch;
+  animation: typing 3s steps(20) forwards,
+    effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
@@ -86,7 +88,7 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 .page-link {

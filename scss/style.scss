@@ -15,6 +15,7 @@ $bold: 700;
 $font-size-nomal: 1rem;
 $font-size-medium: 1.5rem;
 $font-size-large: 2.25rem;
+$font-size-xlarge: 3rem;
 
 html {
   font-size: 16px;
@@ -76,12 +77,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-top: 270px;
+  margin-right: 856px;
 }
 
 .typing-effect {
-  width: 23ch;
-  animation: typing 2.5s steps(23) forwards,
+  width: 20ch;
+  animation: typing 2s steps(20) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -108,7 +110,7 @@ body {
 h1 {
   font-family: $main-font-en;
   font-weight: $light;
-  font-size: $font-size-large;
+  font-size: $font-size-xlarge;
 }
 
 // page-link
