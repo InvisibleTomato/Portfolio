@@ -52,3 +52,59 @@ body {
 .cursor.cursor--hover::after {
   background-color: rgba(255, 215, 82, 0.7);
 }
+
+.typing {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.typing-effect {
+  width: 23ch;
+  animation: typing 2.5s steps(23) forwards, effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+
+.page-link {
+  height: auto;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page-link h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+}
+.page-link li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #0e0e0e;
+  text-align: center;
+  display: block;
+  padding: 1.5rem 0;
+}
