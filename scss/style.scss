@@ -4,6 +4,18 @@ $white: #fdfdfd;
 $yellow: #ffd752;
 $blue: #52c1ff;
 
+// フォント
+$main-font-jp: "Noto Sans JP", sans-serif;
+$main-font-en: "Roboto", sans-serif;
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+// フォントサイズ
+$font-size-nomal: 1rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 2.25rem;
+
 html {
   font-size: 16px;
   cursor: none;
@@ -12,7 +24,7 @@ a:hover {
   cursor: none;
 }
 body {
-  font-size: 1rem;
+  font-size: $font-size-nomal;
   color: $black;
   background-color: $white;
 }
@@ -55,5 +67,67 @@ body {
 
   &::after {
     background-color: rgba($yellow, 0.7);
+  }
+}
+
+// タイピングアニメーション
+.typing {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.typing-effect {
+  width: 23ch;
+  animation: typing 2.5s steps(23) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: $main-font-en;
+  font-weight: $light;
+  font-size: $font-size-large;
+  letter-spacing: 0.02em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//main
+h1 {
+  font-family: $main-font-en;
+  font-weight: $light;
+  font-size: $font-size-large;
+}
+
+// page-link
+.page-link {
+  height: auto;
+  margin: 0 auto;
+  width: fit-content;
+
+  h2 {
+    font-family: $main-font-en;
+    font-weight: $light;
+    font-size: $font-size-large;
+  }
+  li a {
+    font-size: $font-size-medium;
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+    display: block;
+    padding: 1.5rem 0;
   }
 }
