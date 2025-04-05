@@ -1,1 +1,47 @@
 @use "../scss/style" as *;
+
+.profile {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+
+// プロフィールページ専用のタイピングスタイル
+.typing {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+.typing-effect-profile {
+  width: 6ch;
+  animation: typing 1s steps(6) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+  font-family: $main-font-en;
+  font-weight: $light;
+  font-size: $font-size-large;
+  letter-spacing: 0.02em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//profile h1タイトル
+section div .profile-title {
+  font-size: $font-size-large;
+  transition: color 0.5s;
+}
