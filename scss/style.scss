@@ -40,7 +40,7 @@ body {
   border-radius: 50%;
   border: none;
   background: $black;
-  z-index: 1000;
+  z-index: -1000;
   pointer-events: none;
   transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, background 0.5s;
 
@@ -60,12 +60,6 @@ body {
 
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover {
-  width: 24px;
-  height: 24px;
-  top: -12px;
-  left: -12px;
-  background: transparent;
-
   &::after {
     background-color: rgba($yellow, 0.7);
   }
@@ -78,16 +72,16 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 270px;
-  margin-right: 856px;
+  margin-right: 55%;
 }
 
 .typing-effect {
   width: 20ch;
-  animation: typing 2s steps(20) forwards,
+  animation: typing 3s steps(20) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid;
+  border-right: 2px solid $black;
   font-family: $main-font-en;
   font-weight: $light;
   font-size: $font-size-large;
@@ -111,6 +105,11 @@ h1 {
   font-family: $main-font-en;
   font-weight: $light;
   font-size: $font-size-xlarge;
+  letter-spacing: 0.05rem;
+}
+
+h1.h1--hover {
+  color: $white;
 }
 
 // page-link
@@ -123,6 +122,10 @@ h1 {
     font-family: $main-font-en;
     font-weight: $light;
     font-size: $font-size-large;
+    margin-top: 174px;
+    margin-bottom: 117px;
+    color: $white;
+    letter-spacing: 0.3rem;
   }
   li a {
     font-size: $font-size-medium;
@@ -130,6 +133,9 @@ h1 {
     color: $black;
     text-align: center;
     display: block;
-    padding: 1.5rem 0;
+    padding: 0;
+    margin-bottom: 64px;
+    color: $white;
+    letter-spacing: 0.3rem;
   }
 }

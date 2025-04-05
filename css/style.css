@@ -24,7 +24,7 @@ body {
   border-radius: 50%;
   border: none;
   background: #0e0e0e;
-  z-index: 1000;
+  z-index: -1000;
   pointer-events: none;
   transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s, background 0.5s;
 }
@@ -42,13 +42,6 @@ body {
 }
 
 /*aタグにホバーした際のスタイル変化*/
-.cursor.cursor--hover {
-  width: 24px;
-  height: 24px;
-  top: -12px;
-  left: -12px;
-  background: transparent;
-}
 .cursor.cursor--hover::after {
   background-color: rgba(255, 215, 82, 0.7);
 }
@@ -59,16 +52,15 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 270px;
-  margin-right: 856px;
+  margin-right: 55%;
 }
 
 .typing-effect {
   width: 20ch;
-  animation: typing 3s steps(20) forwards,
-    effect 0.5s step-end infinite alternate;
+  animation: typing 3s steps(20) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid;
+  border-right: 2px solid #0e0e0e;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
@@ -89,6 +81,11 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 3rem;
+  letter-spacing: 0.05rem;
+}
+
+h1.h1--hover {
+  color: #fdfdfd;
 }
 
 .page-link {
@@ -101,6 +98,10 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
+  margin-top: 174px;
+  margin-bottom: 117px;
+  color: #fdfdfd;
+  letter-spacing: 0.3rem;
 }
 .page-link li a {
   font-size: 1.5rem;
@@ -108,5 +109,8 @@ h1 {
   color: #0e0e0e;
   text-align: center;
   display: block;
-  padding: 1.5rem 0;
+  padding: 0;
+  margin-bottom: 64px;
+  color: #fdfdfd;
+  letter-spacing: 0.3rem;
 }
