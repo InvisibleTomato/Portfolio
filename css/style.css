@@ -55,9 +55,9 @@ body {
   margin-right: 55%;
 }
 
-.typing-effect {
-  width: 20ch;
-  animation: typing 3s steps(20) forwards, effect 0.5s step-end infinite alternate;
+.typing-effect-top {
+  width: 21ch;
+  animation: typing 2.5s steps(21) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
