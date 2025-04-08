@@ -51,13 +51,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 270px;
-  margin-right: 55%;
 }
 
 .typing-effect-top {
-  width: 20ch;
-  animation: typing 3s steps(20) forwards, effect 0.5s step-end infinite alternate;
+  width: 21ch;
+  animation: typing 2.5s steps(21) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
@@ -77,6 +75,11 @@ body {
     border-color: transparent;
   }
 }
+.top-title-container {
+  margin-top: 168px;
+  margin-right: 55%;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -151,7 +154,45 @@ h1.h1--hover {
     border-color: transparent;
   }
 }
+.profile-title-container {
+  margin-top: 168px;
+  margin-right: 70.2083333333%;
+}
+
 section div .profile-title {
   font-size: 2.25rem;
   transition: color 0.5s;
+}
+
+.profile-wrapper {
+  display: block;
+  margin-top: 82px;
+}
+
+.about-me {
+  margin-left: 41.25%;
+  margin-bottom: 114px;
+}
+.about-me h2 {
+  font-size: 1.5rem;
+  margin-bottom: 86px;
+}
+.about-me p {
+  margin-left: 134px;
+  line-height: 1.5;
+}
+
+.skils {
+  margin-left: 45.4861111111%;
+}
+.skils h2 {
+  font-size: 1.5rem;
+  margin-bottom: 83px;
+}
+.skils h3 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.skils .skils-right {
+  margin-left: 4.5rem;
 }

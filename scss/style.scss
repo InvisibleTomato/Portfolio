@@ -12,10 +12,10 @@ $normal: 400;
 $bold: 700;
 
 // フォントサイズ
-$font-size-nomal: 1rem;
-$font-size-medium: 1.5rem;
-$font-size-large: 2.25rem;
-$font-size-xlarge: 3rem;
+$font-size-nomal: 1rem; //16px
+$font-size-medium: 1.5rem; //24px
+$font-size-large: 2.25rem; //36px
+$font-size-xlarge: 3rem; //48px
 
 html {
   font-size: 16px;
@@ -71,8 +71,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 270px;
-  margin-right: 55%;
 }
 
 .typing-effect-top {
@@ -101,6 +99,11 @@ body {
 }
 
 //main
+.top-title-container {
+  margin-top: 168px;
+  margin-right: 55%;
+}
+
 h1 {
   font-family: $main-font-en;
   font-weight: $light;

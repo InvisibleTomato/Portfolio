@@ -41,7 +41,49 @@
 }
 
 //profile h1タイトル
+.profile-title-container {
+  margin-top: 168px;
+  margin-right: calc(1011 / 1440 * 100%);
+}
+
 section div .profile-title {
   font-size: $font-size-large;
   transition: color 0.5s;
+}
+
+//profile-wrapper
+.profile-wrapper {
+  display: block;
+  margin-top: 82px;
+}
+
+.about-me {
+  margin-left: calc(594 / 1440 * 100%);
+  margin-bottom: 114px;
+  h2 {
+    font-size: $font-size-medium;
+    margin-bottom: 86px;
+  }
+  p {
+    margin-left: 134px;
+    line-height: 1.5;
+  }
+}
+
+.skils {
+  margin-left: calc(655 / 1440 * 100%);
+
+  h2 {
+    font-size: $font-size-medium;
+    margin-bottom: 83px;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .skils-right {
+    margin-left: 4.5rem;
+  }
 }
