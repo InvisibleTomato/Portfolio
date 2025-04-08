@@ -25,7 +25,7 @@ body {
   border: none;
   cursor: none;
   padding: 0;
-  z-index: 10000;
+  z-index: 20000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -36,6 +36,7 @@ body {
   height: 1px;
   background-color: #0e0e0e;
   transition: transform 0.3s ease;
+  z-index: 20000;
 }
 .hamburger[aria-expanded=true] .hamburger__line:first-child {
   transform: translateY(11.5px) rotate(45deg);
@@ -69,6 +70,12 @@ body {
   border-radius: 50%;
   background-color: #52c1ff;
   transition: background-color 0.5s;
+}
+
+/*カーソルをハンバーガーメニュー展開時に前面に出す*/
+.cursor.cursor-is-active {
+  z-index: 9999 !important;
+  pointer-events: auto !important;
 }
 
 /*aタグにホバーした際のスタイル変化*/
@@ -168,7 +175,7 @@ h1.h1--hover {
   pointer-events: auto;
 }
 .navigation.is-active ~ .cursor {
-  z-index: 999 !important;
+  z-index: 9999 !important;
 }
 .navigation__list {
   position: absolute;
