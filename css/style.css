@@ -45,6 +45,49 @@ body {
   transform: translateY(-11.5px) rotate(-45deg);
 }
 
+/*ナビゲーション*/
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(253, 253, 253, 0.95);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+.navigation.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.navigation.is-active ~ .cursor {
+  z-index: 9999 !important;
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navigation__list li {
+  margin-bottom: 40px;
+}
+.navigation__list li:last-child {
+  margin-bottom: 0;
+}
+.navigation__list li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+  text-decoration: none;
+  color: #0e0e0e;
+  letter-spacing: 0.1em;
+}
+
 /*マウスカーソル*/
 .cursor {
   position: fixed;
@@ -131,7 +174,6 @@ h1.h1--hover {
 .page-link {
   height: auto;
   margin: 0 auto;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .page-link h2 {
@@ -155,45 +197,4 @@ h1.h1--hover {
   letter-spacing: 0.3rem;
 }
 
-/*ナビゲーション*/
-.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(253, 253, 253, 0.95);
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  pointer-events: none;
-}
-.navigation.is-active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.navigation.is-active ~ .cursor {
-  z-index: 9999 !important;
-}
-.navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.navigation__list li {
-  margin-bottom: 40px;
-}
-.navigation__list li:last-child {
-  margin-bottom: 0;
-}
-.navigation__list li a {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.25rem;
-  text-decoration: none;
-  color: #0e0e0e;
-  letter-spacing: 0.1em;
-}
+/*# sourceMappingURL=style.css.map */

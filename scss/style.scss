@@ -67,6 +67,55 @@ body {
   }
 }
 
+/*ナビゲーション*/
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($white, 0.95);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    & ~ .cursor {
+      z-index: 9999 !important;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    li {
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        font-family: $main-font-en;
+        font-size: $font-size-large;
+        text-decoration: none;
+        color: $black;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+
 /*マウスカーソル*/
 .cursor {
   position: fixed;
@@ -183,54 +232,5 @@ h1.h1--hover {
     margin-bottom: 64px;
     color: $white;
     letter-spacing: 0.3rem;
-  }
-}
-
-/*ナビゲーション*/
-.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba($white, 0.95);
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  pointer-events: none;
-
-  &.is-active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-
-    & ~ .cursor {
-      z-index: 9999 !important;
-    }
-  }
-
-  &__list {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-
-    li {
-      margin-bottom: 40px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      a {
-        font-family: $main-font-en;
-        font-size: $font-size-large;
-        text-decoration: none;
-        color: $black;
-        letter-spacing: 0.1em;
-      }
-    }
   }
 }
