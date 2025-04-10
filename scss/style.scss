@@ -99,7 +99,7 @@ body {
     text-align: center;
 
     li {
-      margin-bottom: 40px;
+      margin-bottom: 83px;
 
       &:last-child {
         margin-bottom: 0;
@@ -107,7 +107,8 @@ body {
 
       a {
         font-family: $main-font-en;
-        font-size: $font-size-large;
+        font-size: $font-size-medium;
+        font-weight: $light;
         text-decoration: none;
         color: $black;
         letter-spacing: 0.1em;
