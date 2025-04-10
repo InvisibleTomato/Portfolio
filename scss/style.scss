@@ -144,6 +144,7 @@ body {
 /*カーソルをリンクhover時に前面に出す*/
 .cursor.cursor-is-active {
   z-index: 1100;
+  // opacity: 0.7;
 }
 
 /*aタグにホバーした際のスタイル変化*/

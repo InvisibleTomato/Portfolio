@@ -24,15 +24,15 @@ document.addEventListener("mousemove", function (e) {
 });
 
 // リンクにマウスオーバーしたらカーソルを変更
-const interactiveElements = document.querySelectorAll("a", "img");
+const interactiveElements = document.querySelectorAll("a,img");
 
 interactiveElements.forEach(function (element) {
   element.addEventListener("mouseover", function () {
-    cursor.classList.add("cursor--hover", ".cursor-is-active");
+    cursor.classList.add("cursor--hover", "cursor-is-active");
   });
 
   element.addEventListener("mouseout", function () {
-    cursor.classList.remove("cursor--hover", ".cursor-is-active");
+    cursor.classList.remove("cursor--hover", "cursor-is-active");
   });
 });
 
