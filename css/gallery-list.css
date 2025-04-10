@@ -113,7 +113,7 @@ body {
   transition: background-color 0.5s;
 }
 
-/*カーソルをハンバーガーメニュー展開時に前面に出す*/
+/*カーソルをリンクhover時に前面に出す*/
 .cursor.cursor-is-active {
   z-index: 1100;
 }
@@ -121,6 +121,7 @@ body {
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover::after {
   background-color: rgba(255, 215, 82, 0.7);
+  z-index: 1000;
 }
 
 .typing {
@@ -237,7 +238,14 @@ section div .gallery-title {
 }
 
 .gallery-list-wrapper {
+  width: 100%;
+  max-width: 832px;
+  margin-left: 30.7638888889%;
+  margin-top: 116px;
+}
+.gallery-list-wrapper ul {
   display: grid;
-  grid-template-columns: 240px 240px 240px;
+  grid-template-columns: repeat(3, 240px);
   gap: 56px;
+  justify-content: center;
 }

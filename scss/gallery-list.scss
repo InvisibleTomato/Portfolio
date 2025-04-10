@@ -48,7 +48,15 @@ section div .gallery-title {
 //gallery-list
 
 .gallery-list-wrapper {
-  display: grid;
-  grid-template-columns: 240px 240px 240px;
-  gap: 56px;
+  width: 100%;
+  max-width: 832px; // コンテンツの最大幅を設定
+  margin-left: calc(443 / 1440 * 100%);
+  margin-top: 116px;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 240px); // 3列、各列240px
+    gap: 56px; // アイテム間の余白
+    justify-content: center; // グリッドを中央に配置
+  }
 }

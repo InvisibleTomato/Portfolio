@@ -141,7 +141,7 @@ body {
   }
 }
 
-/*カーソルをハンバーガーメニュー展開時に前面に出す*/
+/*カーソルをリンクhover時に前面に出す*/
 .cursor.cursor-is-active {
   z-index: 1100;
 }
@@ -150,6 +150,7 @@ body {
 .cursor.cursor--hover {
   &::after {
     background-color: rgba($yellow, 0.7);
+    z-index: 1000;
   }
 }
 
