@@ -141,17 +141,10 @@ body {
   }
 }
 
-/*カーソルをリンクhover時に前面に出す*/
-.cursor.cursor-is-active {
-  z-index: 1100;
-  // opacity: 0.7;
-}
-
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover {
   &::after {
     background-color: rgba($yellow, 0.7);
-    z-index: 1000;
   }
 }
 

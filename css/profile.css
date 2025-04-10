@@ -113,15 +113,9 @@ body {
   transition: background-color 0.5s;
 }
 
-/*カーソルをリンクhover時に前面に出す*/
-.cursor.cursor-is-active {
-  z-index: 1100;
-}
-
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover::after {
   background-color: rgba(255, 215, 82, 0.7);
-  z-index: 1000;
 }
 
 .typing {
