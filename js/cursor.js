@@ -32,6 +32,18 @@ interactiveElements.forEach(function (element) {
   });
 });
 
+//カーソルがimgにhoverしたらz-indexを1100に
+const interactiveElementsImg = document.querySelectorAll("img");
+
+interactiveElementsImg.forEach(function (element) {
+  element.addEventListener("mouseover", function () {
+    cursor.classList.add("cursor-img-hover");
+  });
+  element.addEventListener("mouseout", function () {
+    cursor.classList.remove("cursor-img-hover");
+  });
+});
+
 //h1にホバーした時にカラーを$whiteに変更
 const h1HoverElements = document.querySelectorAll("h1");
 
