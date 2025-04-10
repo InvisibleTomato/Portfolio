@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gallery-list.css" />
+  </head>
+  <body>
+    <!-- ハンバーガーメニュー -->
+    <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+
+    <!-- メニュー展開時の要素 -->
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li><a href="./index.html">Top</a></li>
+        <li><a href="./profile.html">Profile</a></li>
+        <li><a href="./gallery-list.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- カーソルのdiv -->
+    <div id="cursor" class="cursor"></div>
+    <section class="typing gallery-list-title-container">
+      <div class="typing-effect-gallery hover-white">
+        <h1 class="gallery-list-title">Gallery.</h1>
+      </div>
+    </section>
+
+    <section class="gallery-list-wrapper">
+      <div class="about-me">
+        <h2>About Me.</h2>
+        <p class="about-me-text">
+          2000年生まれ、東京都八王子市出身。<br />
+          新卒では美容師に、その後一身上の都合で退職。<br />
+          論理的にものづくりを行うデザイナーの仕事に魅力を感じデザイナーを目指す。
+        </p>
+      </div>
+
+      <div class="skils">
+        <h2>Skils.</h2>
+        <div class="skils-right">
+          <div class="skils-design">
+            <h3>Design.</h3>
+            <p>Illustrator / Photoshop / Indesign / Lightroom / Figma</p>
+          </div>
+          <div class="skils-coding">
+            <h3>Coding.</h3>
+            <p>HTML / CSS / JavaScript / PHP(コンタクトフォーム等)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/hamburger.js"></script>
+  </body>
+</html>
