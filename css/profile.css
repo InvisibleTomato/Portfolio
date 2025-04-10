@@ -64,9 +64,6 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
-.navigation.is-active ~ .cursor {
-  z-index: 9999 !important;
-}
 .navigation__list {
   position: absolute;
   top: 50%;
@@ -75,14 +72,15 @@ body {
   text-align: center;
 }
 .navigation__list li {
-  margin-bottom: 40px;
+  margin-bottom: 83px;
 }
 .navigation__list li:last-child {
   margin-bottom: 0;
 }
 .navigation__list li a {
   font-family: "Roboto", sans-serif;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   text-decoration: none;
   color: #0e0e0e;
   letter-spacing: 0.1em;
@@ -117,8 +115,7 @@ body {
 
 /*カーソルをハンバーガーメニュー展開時に前面に出す*/
 .cursor.cursor-is-active {
-  z-index: 9999 !important;
-  pointer-events: auto !important;
+  z-index: 1100;
 }
 
 /*aタグにホバーした際のスタイル変化*/
@@ -269,5 +266,3 @@ section div .profile-title {
 .skils .skils-right {
   margin-left: 4.5rem;
 }
-
-/*# sourceMappingURL=profile.css.map */
