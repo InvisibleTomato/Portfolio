@@ -58,5 +58,21 @@ section div .gallery-title {
     grid-template-columns: repeat(3, 240px); // 3列、各列240px
     gap: 56px; // アイテム間の余白
     justify-content: center; // グリッドを中央に配置
+
+    li {
+      margin-bottom: 82px;
+
+      h2 {
+        margin: 27px 0;
+        font-size: 20px;
+        font-family: $main-font-en;
+        font-weight: $light;
+      }
+      p {
+        margin-top: 16px;
+        font-family: $main-font-en;
+        font-weight: $light;
+      }
+    }
   }
 }
