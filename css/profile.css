@@ -113,6 +113,11 @@ body {
   transition: background-color 0.5s;
 }
 
+/*カーソルをimgへhover時に前面に出す*/
+.cursor.cursor-img-hover {
+  z-index: 1100;
+}
+
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover::after {
   background-color: rgba(255, 215, 82, 0.7);

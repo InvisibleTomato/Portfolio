@@ -141,6 +141,11 @@ body {
   }
 }
 
+/*カーソルをimgへhover時に前面に出す*/
+.cursor.cursor-img-hover {
+  z-index: 1100;
+}
+
 /*aタグにホバーした際のスタイル変化*/
 .cursor.cursor--hover {
   &::after {
