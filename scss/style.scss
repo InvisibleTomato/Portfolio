@@ -84,11 +84,6 @@ body {
   &.is-active {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
-
-    & ~ .cursor {
-      z-index: 9999 !important;
-    }
   }
 
   &__list {
@@ -147,8 +142,7 @@ body {
 
 /*カーソルをハンバーガーメニュー展開時に前面に出す*/
 .cursor.cursor-is-active {
-  z-index: 9999 !important;
-  pointer-events: auto !important;
+  // z-index: 1500;
 }
 
 /*aタグにホバーした際のスタイル変化*/

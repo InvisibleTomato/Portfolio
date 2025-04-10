@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         cursor.classList.add("cursor-is-active");
         // 直接スタイルも設定（確実に適用するため）
         setTimeout(() => {
-          cursor.style.zIndex = "9999";
+          cursor.style.zIndex = "1500";
+          cursor.style.pointerEvents = "none";
         }, 10);
       } else {
         // メニューを閉じる
