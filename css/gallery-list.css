@@ -251,6 +251,11 @@ section div .gallery-title {
 .gallery-list-wrapper ul li {
   margin-bottom: 82px;
 }
+.gallery-list-wrapper ul li a img:hover {
+  width: 260px;
+  transition: 0.5s;
+  opacity: 0.8;
+}
 .gallery-list-wrapper ul li h2 {
   margin: 27px 0;
   font-size: 20px;
