@@ -1,1 +1,41 @@
+@use "../scss/style" as *;
+h1 {
+  font-size: $font-size-large;
+}
 
+//タイピング
+.typing-effect-gallery {
+  width: 7ch;
+  animation: typing 1s steps(7) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+  font-family: $main-font-en;
+  font-weight: $light;
+  font-size: $font-size-large;
+  letter-spacing: 0.02em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//タイトル
+.gallery-list-title-container {
+  margin-top: 168px;
+  margin-right: calc(1011 / 1440 * 100%);
+}
+section div .gallery-title {
+  font-size: $font-size-large;
+  letter-spacing: 0.225rem;
+  transition: color 0.5s;
+}
