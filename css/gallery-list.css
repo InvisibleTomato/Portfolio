@@ -198,6 +198,11 @@ h1 {
   font-size: 2.25rem;
 }
 
+img {
+  width: 240px;
+  height: auto;
+}
+
 .typing-effect-gallery {
   width: 7ch;
   animation: typing 1s steps(7) forwards, effect 0.5s step-end infinite alternate;
@@ -229,4 +234,10 @@ section div .gallery-title {
   font-size: 2.25rem;
   letter-spacing: 0.225rem;
   transition: color 0.5s;
+}
+
+.gallery-list-wrapper {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  gap: 56px;
 }

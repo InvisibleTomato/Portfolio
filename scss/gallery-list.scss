@@ -3,6 +3,11 @@ h1 {
   font-size: $font-size-large;
 }
 
+img {
+  width: 240px;
+  height: auto;
+}
+
 //タイピング
 .typing-effect-gallery {
   width: 7ch;
@@ -38,4 +43,12 @@ section div .gallery-title {
   font-size: $font-size-large;
   letter-spacing: 0.225rem;
   transition: color 0.5s;
+}
+
+//gallery-list
+
+.gallery-list-wrapper {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  gap: 56px;
 }
