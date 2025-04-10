@@ -10,8 +10,8 @@
 }
 
 .typing-effect-profile {
-  width: 6ch;
-  animation: typing 1s steps(6) forwards,
+  width: 7ch;
+  animation: typing 1s steps(7) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -42,6 +42,7 @@
 
 section div .profile-title {
   font-size: $font-size-large;
+  letter-spacing: 0.225rem;
   transition: color 0.5s;
 }
 
