@@ -19,6 +19,34 @@ document.addEventListener("mousemove", function (e) {
   cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
 
+// タッチデバイス対応：タッチ操作でカーソルを動かす
+document.addEventListener("touchstart", handleTouch);
+document.addEventListener("touchmove", handleTouch);
+
+// タッチイベント処理関数
+function handleTouch(e) {
+  // デフォルトのスクロール動作を防止（必要に応じてコメントアウト）
+  // e.preventDefault();
+
+  // タッチ位置を取得
+  const touch = e.touches[0];
+
+  // カーソル位置を更新
+  cursor.style.transform = `translate(${touch.clientX}px, ${touch.clientY}px)`;
+
+  // タッチ中はカーソルを表示状態に
+  cursor.style.opacity = "1";
+
+  // タッチ中はカーソルを最前面に表示
+  cursor.style.zIndex = "1100";
+}
+
+// タッチ終了時の処理
+document.addEventListener("touchend", function () {
+  // 必要に応じてカーソルの状態を変更
+  // cursor.style.opacity = "0"; // タッチ終了時にカーソルを非表示にする場合
+});
+
 // リンクにマウスオーバーしたらカーソルを変更
 const interactiveElements = document.querySelectorAll("a,img");
 
