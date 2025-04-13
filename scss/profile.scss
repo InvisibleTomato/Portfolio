@@ -70,16 +70,26 @@ section div .profile-title {
 .profile-wrapper {
   display: block;
   margin-top: 82px;
+
+  @include mq(tab) {
+    margin-top: 200px;
+  }
 }
 
 .about-me {
   margin-left: calc(594 / 1440 * 100%);
   margin-bottom: 114px;
+  line-height: 1.5;
 
   @include mq(sp) {
     margin-left: calc(67 / 402 * 100%);
     margin-right: 10px;
     margin-bottom: 70px;
+  }
+
+  @include mq(tab) {
+    margin-left: calc(350 / 1440 * 100%);
+    margin-right: 10px;
   }
 
   h2 {
@@ -92,7 +102,7 @@ section div .profile-title {
     }
 
     @include mq(tab) {
-      font-size: 20px;
+      font-size: $font-size-medium;
     }
   }
   p {
@@ -101,6 +111,12 @@ section div .profile-title {
 
     @include mq(sp) {
       margin-left: 16px;
+      line-height: 1.5;
+    }
+
+    @include mq(tab) {
+      margin-left: 100px;
+      letter-spacing: 0.02em;
     }
   }
 }
@@ -113,6 +129,12 @@ section div .profile-title {
     margin-right: 10px;
   }
 
+  @include mq(tab) {
+    margin-left: calc(350 / 1440 * 100%);
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+
   h2 {
     font-size: $font-size-medium;
     margin-bottom: 83px;
@@ -123,7 +145,7 @@ section div .profile-title {
     }
 
     @include mq(tab) {
-      font-size: 20px;
+      font-size: $font-size-medium;
     }
   }
 
@@ -142,11 +164,16 @@ section div .profile-title {
     @include mq(sp) {
       margin-left: 16px;
     }
+
+    @include mq(tab) {
+      margin-left: 100px;
+    }
   }
 
   p {
     @include mq(sp) {
       margin-bottom: 50px;
+      line-height: 1.5;
     }
   }
 }

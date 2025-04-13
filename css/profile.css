@@ -337,16 +337,28 @@ section div .profile-title {
   display: block;
   margin-top: 82px;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .profile-wrapper {
+    margin-top: 200px;
+  }
+}
 
 .about-me {
   margin-left: 41.25%;
   margin-bottom: 114px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 767px) {
   .about-me {
     margin-left: 16.6666666667%;
     margin-right: 10px;
     margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about-me {
+    margin-left: 24.3055555556%;
+    margin-right: 10px;
   }
 }
 .about-me h2 {
@@ -361,7 +373,7 @@ section div .profile-title {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-me h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
 .about-me p {
@@ -371,6 +383,13 @@ section div .profile-title {
 @media screen and (max-width: 767px) {
   .about-me p {
     margin-left: 16px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about-me p {
+    margin-left: 100px;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -381,6 +400,13 @@ section div .profile-title {
   .skils {
     margin-left: 16.6666666667%;
     margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .skils {
+    margin-left: 24.3055555556%;
+    margin-right: 10px;
+    margin-bottom: 50px;
   }
 }
 .skils h2 {
@@ -395,7 +421,7 @@ section div .profile-title {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .skils h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
 .skils h3 {
@@ -415,8 +441,14 @@ section div .profile-title {
     margin-left: 16px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .skils .skils-right {
+    margin-left: 100px;
+  }
+}
 @media screen and (max-width: 767px) {
   .skils p {
     margin-bottom: 50px;
+    line-height: 1.5;
   }
 }
