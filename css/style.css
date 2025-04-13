@@ -178,6 +178,13 @@ body {
   font-size: 2.25rem;
   letter-spacing: 0.02em;
 }
+@media screen and (max-width: 767px) {
+  .typing-effect-top {
+    width: 12ch;
+    animation: typing 3s steps(12) forwards, effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+}
 
 @keyframes typing {
   from {
@@ -193,12 +200,28 @@ body {
   margin-top: 168px;
   margin-right: 55%;
 }
+@media screen and (max-width: 767px) {
+  .top-title-container {
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .top-title-container {
+    margin-top: 250px;
+    margin-right: 30%;
+  }
+}
 
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 3rem;
   letter-spacing: 0.05rem;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 
 h1.h1--hover {
@@ -210,6 +233,11 @@ h1.h1--hover {
   margin: 0 auto;
   width: fit-content;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .page-link {
+    margin-top: 30%;
+  }
+}
 .page-link h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -218,6 +246,11 @@ h1.h1--hover {
   margin-bottom: 117px;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .page-link h2 {
+    font-size: 1.5rem;
+  }
 }
 .page-link li a {
   font-size: 1.5rem;
@@ -229,4 +262,9 @@ h1.h1--hover {
   margin-bottom: 64px;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+  .page-link li a {
+    font-size: 1rem;
+  }
 }
