@@ -226,8 +226,8 @@ body {
 }
 
 .typing-effect-top {
-  width: 23ch;
-  animation: typing 3s steps(23) forwards,
+  width: 20ch;
+  animation: typing 3s steps(20) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
