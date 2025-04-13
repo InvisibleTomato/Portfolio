@@ -168,20 +168,19 @@ body {
 }
 
 .typing-effect-top {
-  width: 20ch;
-  animation: typing 3s steps(20) forwards, effect 0.5s step-end infinite alternate;
+  width: 23ch;
+  animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
-  letter-spacing: 0.02em;
 }
 @media screen and (max-width: 767px) {
   .typing-effect-top {
     width: 12ch;
-    animation: typing 3s steps(12) forwards, effect 0.5s step-end infinite alternate;
+    animation: typing 2s steps(12) forwards, effect 0.5s step-end infinite alternate;
     white-space: nowrap;
   }
 }
@@ -216,7 +215,6 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 3rem;
-  letter-spacing: 0.05rem;
 }
 @media screen and (max-width: 767px) {
   h1 {

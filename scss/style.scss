@@ -226,8 +226,8 @@ body {
 }
 
 .typing-effect-top {
-  width: 20ch;
-  animation: typing 3s steps(20) forwards,
+  width: 23ch;
+  animation: typing 3s steps(23) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -235,11 +235,10 @@ body {
   font-family: $main-font-en;
   font-weight: $light;
   font-size: $font-size-large;
-  letter-spacing: 0.02em;
 
   @include mq(sp) {
     width: 12ch;
-    animation: typing 3s steps(12) forwards,
+    animation: typing 2s steps(12) forwards,
       effect 0.5s step-end infinite alternate;
     white-space: nowrap;
   }
@@ -276,7 +275,7 @@ h1 {
   font-family: $main-font-en;
   font-weight: $light;
   font-size: $font-size-xlarge;
-  letter-spacing: 0.05rem;
+  // letter-spacing: 0.2rem;
 
   @include mq(sp) {
     font-size: $font-size-medium;
