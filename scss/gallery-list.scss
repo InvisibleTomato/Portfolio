@@ -20,6 +20,13 @@ img {
   font-weight: $light;
   font-size: $font-size-large;
   letter-spacing: 0.02em;
+
+  @include mq(sp) {
+    width: 5ch;
+    animation: typing 1s steps(5) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
 }
 
 @keyframes typing {
@@ -38,11 +45,20 @@ img {
 .gallery-list-title-container {
   margin-top: 168px;
   margin-right: calc(1011 / 1440 * 100%);
+
+  @include mq(sp) {
+    margin-right: calc(200 / 402 * 100%);
+    margin-top: 100px;
+  }
 }
-section div .gallery-title {
+section div .gallery-list-title {
   font-size: $font-size-large;
   letter-spacing: 0.225rem;
   transition: color 0.5s;
+
+  @include mq(sp) {
+    font-size: $font-size-medium;
+  }
 }
 
 //gallery-list
@@ -53,11 +69,23 @@ section div .gallery-title {
   margin-left: calc(443 / 1440 * 100%);
   margin-top: 116px;
 
+  @include mq(sp) {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
   ul {
     display: grid;
     grid-template-columns: repeat(3, 240px); // 3列、各列240px
     gap: 56px; // アイテム間の余白
     justify-content: center; // グリッドを中央に配置
+
+    @include mq(sp) {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 240px);
+    }
 
     li {
       margin-bottom: 82px;
