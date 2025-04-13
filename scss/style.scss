@@ -69,6 +69,25 @@ body {
   }
 }
 
+// トップページのレスポンシブ対応のためのカーソル調整
+@media (max-width: 1279px) {
+  // トップページ専用のカーソル背面配置
+  body#no-scroll .cursor {
+    z-index: -2000 !important; // テキストより背面に
+  }
+
+  // h1とリンクのテキストを読みやすくするための調整
+  .page-link h2,
+  .page-link li a {
+    position: relative;
+    z-index: 10; // カーソルより前面に
+  }
+
+  .typing-effect-top {
+    position: relative;
+    z-index: 10; // カーソルより前面に
+  }
+}
 // タッチデバイスでの特定操作時スタイル
 .cursor-touch-active {
   opacity: 1;

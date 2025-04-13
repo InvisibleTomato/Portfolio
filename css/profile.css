@@ -32,6 +32,20 @@ body {
     height: 18px;
   }
 }
+@media (max-width: 1279px) {
+  body#no-scroll .cursor {
+    z-index: -2000 !important;
+  }
+  .page-link h2,
+  .page-link li a {
+    position: relative;
+    z-index: 10;
+  }
+  .typing-effect-top {
+    position: relative;
+    z-index: 10;
+  }
+}
 .cursor-touch-active {
   opacity: 1;
   z-index: 1100;
