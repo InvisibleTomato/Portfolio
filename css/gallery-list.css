@@ -317,6 +317,11 @@ img {
     margin-top: 100px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery-list-title-container {
+    margin-right: 52.2388059701%;
+  }
+}
 
 section div .gallery-list-title {
   font-size: 2.25rem;
@@ -341,6 +346,12 @@ section div .gallery-list-title {
     margin-top: 80px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery-list-wrapper {
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+}
 .gallery-list-wrapper ul {
   display: grid;
   grid-template-columns: repeat(3, 240px);
@@ -353,6 +364,14 @@ section div .gallery-list-title {
     width: 100%;
     margin: 0 auto;
     grid-template-columns: repeat(1, 240px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery-list-wrapper ul {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 240px);
   }
 }
 .gallery-list-wrapper ul li {
