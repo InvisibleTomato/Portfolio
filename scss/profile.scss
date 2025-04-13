@@ -20,6 +20,13 @@
   font-weight: $light;
   font-size: $font-size-large;
   letter-spacing: 0.02em;
+
+  @include mq(sp) {
+    width: 5ch;
+    animation: typing 1s steps(5) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
 }
 
 @keyframes typing {
@@ -38,12 +45,25 @@
 .profile-title-container {
   margin-top: 168px;
   margin-right: calc(1011 / 1440 * 100%);
+
+  @include mq(sp) {
+    margin-right: calc(200 / 402 * 100%);
+    margin-top: 100px;
+  }
+
+  @include mq(tab) {
+    margin-right: calc(200 / 402 * 100%);
+  }
 }
 
 section div .profile-title {
   font-size: $font-size-large;
   letter-spacing: 0.2rem;
   transition: color 0.5s;
+
+  @include mq(sp) {
+    font-size: $font-size-medium;
+  }
 }
 
 //profile-wrapper
@@ -55,30 +75,78 @@ section div .profile-title {
 .about-me {
   margin-left: calc(594 / 1440 * 100%);
   margin-bottom: 114px;
+
+  @include mq(sp) {
+    margin-left: calc(67 / 402 * 100%);
+    margin-right: 10px;
+    margin-bottom: 70px;
+  }
+
   h2 {
     font-size: $font-size-medium;
     margin-bottom: 86px;
+
+    @include mq(sp) {
+      font-size: 20px;
+      margin-bottom: 44px;
+    }
+
+    @include mq(tab) {
+      font-size: 20px;
+    }
   }
   p {
     margin-left: 134px;
     line-height: 1.5;
+
+    @include mq(sp) {
+      margin-left: 16px;
+    }
   }
 }
 
 .skils {
   margin-left: calc(655 / 1440 * 100%);
 
+  @include mq(sp) {
+    margin-left: calc(67 / 402 * 100%);
+    margin-right: 10px;
+  }
+
   h2 {
     font-size: $font-size-medium;
     margin-bottom: 83px;
+
+    @include mq(sp) {
+      font-size: 20px;
+      margin-bottom: 44px;
+    }
+
+    @include mq(tab) {
+      font-size: 20px;
+    }
   }
 
   h3 {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+
+    @include mq(sp) {
+      margin-bottom: 1rem;
+    }
   }
 
   .skils-right {
     margin-left: 4.5rem;
+
+    @include mq(sp) {
+      margin-left: 16px;
+    }
+  }
+
+  p {
+    @include mq(sp) {
+      margin-bottom: 50px;
+    }
   }
 }
