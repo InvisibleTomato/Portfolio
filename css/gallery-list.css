@@ -168,8 +168,8 @@ body {
 }
 
 .typing-effect-top {
-  width: 23ch;
-  animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
+  width: 19ch;
+  animation: typing 3s steps(19) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
@@ -229,6 +229,7 @@ h1.h1--hover {
 .page-link {
   height: auto;
   margin: 0 auto;
+  width: -moz-fit-content;
   width: fit-content;
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -390,4 +391,4 @@ section div .gallery-list-title {
   margin-top: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-}
+}/*# sourceMappingURL=gallery-list.css.map */

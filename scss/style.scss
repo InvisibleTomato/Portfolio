@@ -225,6 +225,7 @@ body {
   justify-content: center;
 }
 
+/* タイピングアニメーション改善版 */
 .typing-effect-top {
   width: 23ch;
   animation: typing 3s steps(23) forwards,
@@ -235,10 +236,12 @@ body {
   font-family: $main-font-en;
   font-weight: $light;
   font-size: $font-size-large;
+  letter-spacing: 0.02em;
+  margin: 0 10%;
 
   @include mq(sp) {
     width: 12ch;
-    animation: typing 2s steps(12) forwards,
+    animation: typing 3s steps(12) forwards,
       effect 0.5s step-end infinite alternate;
     white-space: nowrap;
   }
