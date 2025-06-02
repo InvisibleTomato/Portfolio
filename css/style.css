@@ -9,7 +9,7 @@ a:hover {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 16px;
   color: #0e0e0e;
   background-color: #fdfdfd;
 }
@@ -162,6 +162,7 @@ body {
 
 .typing {
   height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,22 +170,21 @@ body {
 
 /* タイピングアニメーション改善版 */
 .typing-effect-top {
-  width: 23ch;
+  width: 35rem;
   animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
-  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
   font-weight: 300;
-  font-size: 2.25rem;
-  letter-spacing: 0.02em;
-  margin: 0 10%;
+  position: fixed;
+  top: 15%;
+  left: 10%;
 }
 @media screen and (max-width: 767px) {
   .typing-effect-top {
-    width: 12ch;
-    animation: typing 3s steps(12) forwards, effect 0.5s step-end infinite alternate;
-    white-space: nowrap;
+    width: 18rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -215,7 +215,7 @@ body {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: monospace;
   font-weight: 300;
   font-size: 3rem;
 }
@@ -237,7 +237,7 @@ h1.h1--hover {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .page-link {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 }
 .page-link h2 {

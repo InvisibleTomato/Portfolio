@@ -10,20 +10,23 @@
 }
 
 .typing-effect-profile {
-  width: 7ch;
-  animation: typing 1s steps(7) forwards,
+  width: 11rem;
+  animation: typing 1s steps(8) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid $black;
-  font-family: $main-font-en;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+
   font-weight: $light;
   font-size: $font-size-large;
   letter-spacing: 0.02em;
 
   @include mq(sp) {
-    width: 5ch;
-    animation: typing 1s steps(5) forwards,
+    width: 8rem;
+    animation: typing 1s steps(8) forwards,
       effect 0.5s step-end infinite alternate;
     white-space: nowrap;
   }
@@ -60,6 +63,7 @@ section div .profile-title {
   font-size: $font-size-large;
   letter-spacing: 0.2rem;
   transition: color 0.5s;
+  font-family: monospace;
 
   @include mq(sp) {
     font-size: $font-size-medium;
