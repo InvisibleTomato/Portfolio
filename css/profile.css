@@ -352,9 +352,9 @@ section div .profile-title {
 }
 @media screen and (max-width: 767px) {
   .about-me {
-    margin-left: 16.6666666667%;
-    margin-right: 10px;
     margin-bottom: 70px;
+    margin-left: 11%;
+    margin-right: 5%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -384,8 +384,8 @@ section div .profile-title {
 }
 @media screen and (max-width: 767px) {
   .about-me p {
-    margin-left: 16px;
     line-height: 1.5;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -400,8 +400,8 @@ section div .profile-title {
 }
 @media screen and (max-width: 767px) {
   .skils {
-    margin-left: 16.6666666667%;
-    margin-right: 10px;
+    margin-left: 11%;
+    margin-right: 5%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -440,7 +440,7 @@ section div .profile-title {
 }
 @media screen and (max-width: 767px) {
   .skils .skils-right {
-    margin-left: 16px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {

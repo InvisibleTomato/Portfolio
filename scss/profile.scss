@@ -82,9 +82,9 @@ section div .profile-title {
   line-height: 1.5;
 
   @include mq(sp) {
-    margin-left: calc(67 / 402 * 100%);
-    margin-right: 10px;
     margin-bottom: 70px;
+    margin-left: 11%;
+    margin-right: 5%;
   }
 
   @include mq(tab) {
@@ -110,8 +110,8 @@ section div .profile-title {
     line-height: 1.5;
 
     @include mq(sp) {
-      margin-left: 16px;
       line-height: 1.5;
+      margin-left: 0;
     }
 
     @include mq(tab) {
@@ -125,8 +125,8 @@ section div .profile-title {
   margin-left: calc(655 / 1440 * 100%);
 
   @include mq(sp) {
-    margin-left: calc(67 / 402 * 100%);
-    margin-right: 10px;
+    margin-left: 11%;
+    margin-right: 5%;
   }
 
   @include mq(tab) {
@@ -162,7 +162,7 @@ section div .profile-title {
     margin-left: 4.5rem;
 
     @include mq(sp) {
-      margin-left: 16px;
+      margin-left: 0;
     }
 
     @include mq(tab) {
