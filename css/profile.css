@@ -405,6 +405,7 @@ section div .profile-title {
 
 .skils {
   margin-left: 45.4861111111%;
+  margin-bottom: 5vw;
 }
 @media screen and (max-width: 767px) {
   .skils {

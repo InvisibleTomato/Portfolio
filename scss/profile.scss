@@ -131,6 +131,7 @@ section div .profile-title {
 
 .skils {
   margin-left: calc(655 / 1440 * 100%);
+  margin-bottom: 5vw;
 
   @include mq(sp) {
     margin-left: 11%;
