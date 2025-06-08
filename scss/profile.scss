@@ -73,7 +73,11 @@ section div .profile-title {
 //profile-wrapper
 .profile-wrapper {
   display: block;
-  margin-top: 82px;
+  margin-top: 10vw;
+
+  @include mq(sp) {
+    margin-top: 40vw;
+  }
 
   @include mq(tab) {
     margin-top: 200px;
@@ -93,7 +97,7 @@ section div .profile-title {
 
   @include mq(tab) {
     margin-left: calc(350 / 1440 * 100%);
-    margin-right: 10px;
+    margin-right: 10vw;
   }
 
   h2 {

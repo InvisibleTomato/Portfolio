@@ -340,7 +340,12 @@ section div .profile-title {
 
 .profile-wrapper {
   display: block;
-  margin-top: 82px;
+  margin-top: 10vw;
+}
+@media screen and (max-width: 767px) {
+  .profile-wrapper {
+    margin-top: 40vw;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .profile-wrapper {
@@ -363,7 +368,7 @@ section div .profile-title {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-me {
     margin-left: 24.3055555556%;
-    margin-right: 10px;
+    margin-right: 10vw;
   }
 }
 .about-me h2 {
