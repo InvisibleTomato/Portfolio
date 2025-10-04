@@ -4,7 +4,7 @@ const cursor = document.querySelector(".cursor");
 
 // ページごとのカーソル表示制御
 const currentPage = window.location.pathname;
-const specialPages = ["/profile.html", "/gallery-list.html"];
+const specialPages = ["/profile.html", "/gallery-list.html", "/gallery.html"];
 
 if (specialPages.some((page) => currentPage.includes(page))) {
   cursor.style.width = "24px";
