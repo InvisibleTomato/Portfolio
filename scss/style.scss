@@ -20,6 +20,7 @@ $blue: #52c1ff;
 // フォント
 $main-font-jp: "Noto Sans JP", sans-serif;
 $main-font-en: "Roboto", sans-serif;
+$title-font: "monospace";
 $light: 300;
 $normal: 400;
 $bold: 700;
@@ -70,7 +71,7 @@ body {
 }
 
 // トップページのレスポンシブ対応のためのカーソル調整
-@media (max-width: 1279px) {
+@media (max-width: 1025px) {
   // トップページ専用のカーソル背面配置
   body#no-scroll .cursor {
     z-index: -2000 !important; // テキストより背面に
@@ -87,11 +88,6 @@ body {
     position: relative;
     z-index: 10; // カーソルより前面に
   }
-}
-// タッチデバイスでの特定操作時スタイル
-.cursor-touch-active {
-  opacity: 1;
-  z-index: 1100;
 }
 
 //スマホ時とPC時の表示を切り替え
@@ -300,9 +296,10 @@ body {
   justify-content: center;
 }
 
-/* タイピングアニメーション改善版 */
+// タイピングアニメーション改善版
 .typing-effect-top {
-  width: 35rem;
+  width: fit-content;
+  // アニメーション設定
   animation: typing 3s steps(23) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -314,18 +311,23 @@ body {
   top: 15%;
   left: 10%;
 
+  // スマホ用調整
   @include mq(sp) {
-    width: 18rem;
     font-size: $font-size-medium;
   }
 }
 
+// タイピング（文字出現）アニメーション
 @keyframes typing {
   from {
     width: 0;
   }
+  to {
+    width: 100%;
+  }
 }
 
+// カーソル点滅アニメーション
 @keyframes effect {
   50% {
     border-color: transparent;
@@ -335,7 +337,7 @@ body {
 //main
 .top-title-container {
   margin-top: 168px;
-  margin-right: 55%;
+  margin-right: 55vw;
 
   @include mq(sp) {
     margin-right: 10%;
@@ -350,10 +352,15 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  font-family: $title-font;
   font-weight: $light;
   font-size: $font-size-xlarge;
+
   // letter-spacing: 0.2rem;
+
+  &:hover {
+    transition: 0.5s;
+  }
 
   @include mq(sp) {
     font-size: $font-size-medium;
