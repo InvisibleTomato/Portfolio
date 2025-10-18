@@ -5,7 +5,7 @@ h1 {
 }
 
 img {
-  width: 240px;
+  width: 100%;
   height: auto;
 }
 
@@ -74,7 +74,7 @@ section div .gallery-list-title {
 .gallery-list-wrapper {
   width: 100%;
   max-width: 832px; // コンテンツの最大幅を設定
-  margin-left: calc(443 / 1440 * 100%);
+  // margin-left: calc(443 / 1440 * 100%);
   margin-top: 10vw;
 
   @include mq(sp) {
@@ -84,36 +84,33 @@ section div .gallery-list-title {
 
   @include mq(tab) {
     margin: 0 auto;
-    margin-top: 30vw;
+    margin-top: 10vw;
   }
   ul {
-    display: grid;
-    grid-template-columns: repeat(3, 240px); // 3列、各列240px
-    gap: 56px; // アイテム間の余白
-    justify-content: center; // グリッドを中央に配置
+    display: block;
 
     @include mq(sp) {
       max-width: 100%;
       width: 100%;
       margin: 0 auto;
-      grid-template-columns: repeat(1, 240px);
     }
     @include mq(tab) {
       max-width: 100%;
       width: 100%;
       margin: 0 auto;
-      grid-template-columns: repeat(2, 240px);
     }
 
     li {
       margin-bottom: 82px;
 
       a img {
-        width: 240px;
+        width: 90%;
+        margin: 0 auto;
         transition: transform 0.3s ease, opacity 0.3s ease;
         will-change: transform;
         position: relative;
         z-index: 0;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
       }
 
       a img:hover {
