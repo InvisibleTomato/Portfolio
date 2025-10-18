@@ -51,7 +51,71 @@ body {
   z-index: 1100;
 }
 
-/*ハンバーガーメニュー*/
+@media screen and (min-width: 1025px) {
+  .sp-only {
+    display: none;
+  }
+  .pc-only {
+    display: block;
+  }
+}
+@media screen and (max-width: 540px) {
+  .sp-only {
+    display: block;
+  }
+  .pc-only {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .sp-only {
+    display: block;
+  }
+  .pc-only {
+    display: none;
+  }
+}
+.sp-only {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .sp-only {
+    width: 50%;
+  }
+}
+.sp-only p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.sp-only a {
+  display: block;
+  margin-top: 10%;
+  color: #0e0e0e;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-bottom: 2%;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #0e0e0e;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caution-icon {
+  width: 100%;
+  max-width: 50px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  display: block;
+}
+
 .hamburger {
   position: fixed;
   top: 40px;
@@ -149,6 +213,16 @@ body {
   background-color: #52c1ff;
   transition: background-color 0.5s;
 }
+@media screen and (max-width: 540px) {
+  .cursor {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .cursor {
+    display: none;
+  }
+}
 
 /*カーソルをimgへhover時に前面に出す*/
 .cursor.cursor-img-hover {
@@ -166,6 +240,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 540px) {
+  .typing {
+    display: none;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .typing {
+    display: none;
+  }
 }
 
 /* タイピングアニメーション改善版 */
