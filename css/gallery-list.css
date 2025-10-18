@@ -32,7 +32,7 @@ body {
     height: 18px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1025px) {
   body#no-scroll .cursor {
     z-index: -2000 !important;
   }
@@ -46,11 +46,6 @@ body {
     z-index: 10;
   }
 }
-.cursor-touch-active {
-  opacity: 1;
-  z-index: 1100;
-}
-
 @media screen and (min-width: 1025px) {
   .sp-only {
     display: none;
@@ -291,7 +286,7 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  font-family: "monospace";
   font-weight: 300;
   font-size: 3rem;
 }
@@ -420,9 +415,10 @@ section div .gallery-list-title {
 
 .gallery-list-wrapper {
   width: 100%;
-  max-width: 832px;
-  margin-top: 10vw;
-  margin-left: 30%;
+  max-width: 60vw;
+  margin-top: 20vw;
+  margin-left: 35vw;
+  margin-bottom: 15vw;
 }
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper {
@@ -457,7 +453,7 @@ section div .gallery-list-title {
   margin-bottom: 82px;
 }
 .gallery-list-wrapper ul li a img {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform;
@@ -471,13 +467,23 @@ section div .gallery-list-title {
   z-index: 10;
 }
 .gallery-list-wrapper ul li h2 {
-  margin: 27px 0;
-  font-size: 20px;
+  margin: 2vw 0;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 .gallery-list-wrapper ul li p {
-  margin-top: 16px;
+  margin-top: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+}
+
+.gallery-list-wrapper-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #0e0e0e;
+  padding-bottom: 3%;
 }

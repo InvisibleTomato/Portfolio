@@ -75,10 +75,11 @@ section div .gallery-list-title {
 
 .gallery-list-wrapper {
   width: 100%;
-  max-width: 832px; // コンテンツの最大幅を設定
+  max-width: 60vw; // コンテンツの最大幅を設定
   // margin-left: calc(443 / 1440 * 100%);
-  margin-top: 10vw;
-  margin-left: 30%;
+  margin-top: 20vw;
+  margin-left: 35vw;
+  margin-bottom: 15vw;
 
   @include mq(sp) {
     margin: 0 auto;
@@ -107,7 +108,7 @@ section div .gallery-list-title {
       margin-bottom: 82px;
 
       a img {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         transition: transform 0.3s ease, opacity 0.3s ease;
         will-change: transform;
@@ -123,16 +124,26 @@ section div .gallery-list-title {
       }
 
       h2 {
-        margin: 27px 0;
-        font-size: 20px;
+        margin: 2vw 0;
+        font-size: $font-size-medium;
         font-family: $main-font-en;
         font-weight: $light;
       }
       p {
-        margin-top: 16px;
+        margin-top: $font-size-normal;
         font-family: $main-font-en;
         font-weight: $light;
+        line-height: 1;
+        letter-spacing: 0.05rem;
       }
     }
   }
+}
+
+.gallery-list-wrapper-title {
+  font-family: $main-font-en;
+  font-size: $font-size-medium;
+  margin-bottom: 10%;
+  border-bottom: 1px solid $black;
+  padding-bottom: 3%;
 }
