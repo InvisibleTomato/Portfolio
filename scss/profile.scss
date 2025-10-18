@@ -85,7 +85,8 @@ section div .profile-title {
 }
 
 .about-me {
-  margin-left: calc(594 / 1440 * 100%);
+  width: 50%;
+  margin-left: 40%;
   margin-bottom: 114px;
   line-height: 1.5;
 
@@ -102,20 +103,20 @@ section div .profile-title {
 
   h2 {
     font-size: $font-size-medium;
-    margin-bottom: 86px;
+    margin-bottom: 10%;
 
     @include mq(sp) {
       font-size: 20px;
-      margin-bottom: 44px;
+      margin-bottom: 10%;
     }
 
     @include mq(tab) {
       font-size: $font-size-medium;
     }
   }
-  p {
-    margin-left: 134px;
+  .about-me-text {
     line-height: 1.5;
+    width: 100%;
 
     @include mq(sp) {
       line-height: 1.5;
@@ -130,7 +131,8 @@ section div .profile-title {
 }
 
 .skils {
-  margin-left: calc(655 / 1440 * 100%);
+  width: 50%;
+  margin-left: 40%;
   margin-bottom: 5vw;
 
   @include mq(sp) {
@@ -146,7 +148,7 @@ section div .profile-title {
 
   h2 {
     font-size: $font-size-medium;
-    margin-bottom: 83px;
+    margin-bottom: 10%;
 
     @include mq(sp) {
       font-size: 20px;
@@ -168,8 +170,6 @@ section div .profile-title {
   }
 
   .skils-right {
-    margin-left: 4.5rem;
-
     @include mq(sp) {
       margin-left: 0;
     }
