@@ -241,16 +241,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 540px) {
-  .typing {
-    display: none;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .typing {
-    display: none;
-  }
-}
 
 /* タイピングアニメーション改善版 */
 .typing-effect-top {
@@ -289,12 +279,14 @@ body {
 @media screen and (max-width: 540px) {
   .top-title-container {
     margin-right: 10%;
+    display: none;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .top-title-container {
     margin-top: 250px;
     margin-right: 30%;
+    display: none;
   }
 }
 
