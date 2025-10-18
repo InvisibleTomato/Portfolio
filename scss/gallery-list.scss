@@ -53,6 +53,7 @@ img {
   @include mq(sp) {
     margin-right: calc(200 / 402 * 100%);
     margin-top: 100px;
+    display: block;
   }
 
   @include mq(tab) {
@@ -66,6 +67,7 @@ section div .gallery-list-title {
 
   @include mq(sp) {
     font-size: $font-size-medium;
+    display: block;
   }
 }
 
@@ -76,6 +78,7 @@ section div .gallery-list-title {
   max-width: 832px; // コンテンツの最大幅を設定
   // margin-left: calc(443 / 1440 * 100%);
   margin-top: 10vw;
+  margin-left: 30%;
 
   @include mq(sp) {
     margin: 0 auto;
