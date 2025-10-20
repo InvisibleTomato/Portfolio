@@ -1,11 +1,15 @@
 @charset "UTF-8";
 html {
   font-size: 16px;
-  cursor: none;
 }
 
-a:hover {
-  cursor: none;
+html,
+body,
+a,
+img,
+button,
+* {
+  cursor: none !important;
 }
 
 body {
@@ -237,9 +241,9 @@ body {
   justify-content: center;
 }
 
-/* タイピングアニメーション改善版 */
 .typing-effect-top {
-  width: 35rem;
+  width: -moz-fit-content;
+  width: fit-content;
   animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -252,7 +256,6 @@ body {
 }
 @media screen and (max-width: 540px) {
   .typing-effect-top {
-    width: 18rem;
     font-size: 1.5rem;
   }
 }
@@ -260,6 +263,9 @@ body {
 @keyframes typing {
   from {
     width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 @keyframes effect {
@@ -269,7 +275,7 @@ body {
 }
 .top-title-container {
   margin-top: 168px;
-  margin-right: 55%;
+  margin-right: 55vw;
 }
 @media screen and (max-width: 540px) {
   .top-title-container {
@@ -289,6 +295,9 @@ h1 {
   font-family: "monospace";
   font-weight: 300;
   font-size: 3rem;
+}
+h1:hover {
+  transition: 0.5s;
 }
 @media screen and (max-width: 540px) {
   h1 {
@@ -335,6 +344,7 @@ h1.h1--hover {
   margin-bottom: 64px;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 540px) {
   .page-link li a {
@@ -423,7 +433,8 @@ section div .gallery-list-title {
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper {
     margin: 0 auto;
-    margin-top: 40vw;
+    margin-top: 60vw;
+    max-width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
@@ -450,7 +461,12 @@ section div .gallery-list-title {
   }
 }
 .gallery-list-wrapper ul li {
-  margin-bottom: 82px;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 540px) {
+  .gallery-list-wrapper ul li {
+    margin-bottom: 10vw;
+  }
 }
 .gallery-list-wrapper ul li a img {
   width: 100%;
@@ -467,10 +483,15 @@ section div .gallery-list-title {
   z-index: 10;
 }
 .gallery-list-wrapper ul li h2 {
-  margin: 2vw 0;
+  margin: 2vw 0 0 0;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+@media screen and (max-width: 540px) {
+  .gallery-list-wrapper ul li h2 {
+    margin-top: 5vw;
+  }
 }
 .gallery-list-wrapper ul li p {
   margin-top: 1rem;
@@ -483,7 +504,12 @@ section div .gallery-list-title {
 .gallery-list-wrapper-title {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  margin-bottom: 10%;
+  margin-bottom: 5vw;
   border-bottom: 1px solid #0e0e0e;
   padding-bottom: 3%;
+}
+@media screen and (max-width: 540px) {
+  .gallery-list-wrapper-title {
+    margin-bottom: 10vw;
+  }
 }

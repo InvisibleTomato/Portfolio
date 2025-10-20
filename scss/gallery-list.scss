@@ -83,7 +83,8 @@ section div .gallery-list-title {
 
   @include mq(sp) {
     margin: 0 auto;
-    margin-top: 40vw;
+    margin-top: 60vw;
+    max-width: 80vw;
   }
 
   @include mq(tab) {
@@ -105,7 +106,11 @@ section div .gallery-list-title {
     }
 
     li {
-      margin-bottom: 82px;
+      margin-bottom: 5vw;
+
+      @include mq(sp) {
+        margin-bottom: 10vw;
+      }
 
       a img {
         width: 100%;
@@ -124,10 +129,14 @@ section div .gallery-list-title {
       }
 
       h2 {
-        margin: 2vw 0;
+        margin: 2vw 0 0 0;
         font-size: $font-size-medium;
         font-family: $main-font-en;
         font-weight: $light;
+
+        @include mq(sp) {
+          margin-top: 5vw;
+        }
       }
       p {
         margin-top: $font-size-normal;
@@ -143,7 +152,11 @@ section div .gallery-list-title {
 .gallery-list-wrapper-title {
   font-family: $main-font-en;
   font-size: $font-size-medium;
-  margin-bottom: 10%;
+  margin-bottom: 5vw;
   border-bottom: 1px solid $black;
   padding-bottom: 3%;
+
+  @include mq(sp) {
+    margin-bottom: 10vw;
+  }
 }
