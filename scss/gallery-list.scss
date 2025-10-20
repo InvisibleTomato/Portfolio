@@ -1,6 +1,7 @@
 @use "../scss/style" as *;
 h1 {
-  font-family: monospace;
+  font-family: $title-font;
+
   font-size: $font-size-large;
 }
 
@@ -62,7 +63,7 @@ img {
 }
 section div .gallery-list-title {
   font-size: $font-size-large;
-  letter-spacing: 0.225rem;
+  letter-spacing: 0.2rem;
   transition: color 0.5s;
 
   @include mq(sp) {
@@ -89,7 +90,8 @@ section div .gallery-list-title {
 
   @include mq(tab) {
     margin: 0 auto;
-    margin-top: 10vw;
+    margin-top: 40vw;
+    max-width: 80vw;
   }
   ul {
     display: block;
