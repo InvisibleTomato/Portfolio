@@ -84,6 +84,24 @@ section div .profile-title {
   }
 }
 
+//共通クラス
+.profile-h2 {
+  font-family: $main-font-en;
+  font-size: $font-size-medium;
+  margin-bottom: 10%;
+  border-bottom: 1px solid $black;
+  padding-bottom: 3%;
+
+  @include mq(sp) {
+    font-size: 20px;
+    margin-bottom: 10%;
+  }
+
+  @include mq(tab) {
+    font-size: $font-size-medium;
+  }
+}
+
 .about-me {
   width: 50%;
   margin-left: 40%;
@@ -93,7 +111,8 @@ section div .profile-title {
   @include mq(sp) {
     margin-bottom: 70px;
     margin-left: 11%;
-    margin-right: 5%;
+    margin-right: 0;
+    width: 80vw;
   }
 
   @include mq(tab) {
@@ -101,19 +120,6 @@ section div .profile-title {
     margin-right: 10vw;
   }
 
-  h2 {
-    font-size: $font-size-medium;
-    margin-bottom: 10%;
-
-    @include mq(sp) {
-      font-size: 20px;
-      margin-bottom: 10%;
-    }
-
-    @include mq(tab) {
-      font-size: $font-size-medium;
-    }
-  }
   .about-me-text {
     line-height: 1.5;
     width: 100%;
@@ -137,27 +143,14 @@ section div .profile-title {
 
   @include mq(sp) {
     margin-left: 11%;
-    margin-right: 5%;
+    margin-right: 0;
+    width: 80vw;
   }
 
   @include mq(tab) {
     margin-left: calc(350 / 1440 * 100%);
     margin-right: 10px;
     margin-bottom: 50px;
-  }
-
-  h2 {
-    font-size: $font-size-medium;
-    margin-bottom: 10%;
-
-    @include mq(sp) {
-      font-size: 20px;
-      margin-bottom: 44px;
-    }
-
-    @include mq(tab) {
-      font-size: $font-size-medium;
-    }
   }
 
   h3 {

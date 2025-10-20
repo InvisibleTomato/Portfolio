@@ -1,11 +1,15 @@
 @charset "UTF-8";
 html {
   font-size: 16px;
-  cursor: none;
 }
 
-a:hover {
-  cursor: none;
+html,
+body,
+a,
+img,
+button,
+* {
+  cursor: none !important;
 }
 
 body {
@@ -32,7 +36,7 @@ body {
     height: 18px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1025px) {
   body#no-scroll .cursor {
     z-index: -2000 !important;
   }
@@ -46,11 +50,6 @@ body {
     z-index: 10;
   }
 }
-.cursor-touch-active {
-  opacity: 1;
-  z-index: 1100;
-}
-
 @media screen and (min-width: 1025px) {
   .sp-only {
     display: none;
@@ -242,9 +241,9 @@ body {
   justify-content: center;
 }
 
-/* タイピングアニメーション改善版 */
 .typing-effect-top {
-  width: 35rem;
+  width: -moz-fit-content;
+  width: fit-content;
   animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -257,7 +256,6 @@ body {
 }
 @media screen and (max-width: 540px) {
   .typing-effect-top {
-    width: 18rem;
     font-size: 1.5rem;
   }
 }
@@ -265,6 +263,9 @@ body {
 @keyframes typing {
   from {
     width: 0;
+  }
+  to {
+    width: 100%;
   }
 }
 @keyframes effect {
@@ -274,7 +275,7 @@ body {
 }
 .top-title-container {
   margin-top: 168px;
-  margin-right: 55%;
+  margin-right: 55vw;
 }
 @media screen and (max-width: 540px) {
   .top-title-container {
@@ -291,9 +292,12 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  font-family: "monospace";
   font-weight: 300;
   font-size: 3rem;
+}
+h1:hover {
+  transition: 0.5s;
 }
 @media screen and (max-width: 540px) {
   h1 {
@@ -340,6 +344,7 @@ h1.h1--hover {
   margin-bottom: 64px;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 540px) {
   .page-link li a {
@@ -430,6 +435,25 @@ section div .profile-title {
   }
 }
 
+.profile-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #0e0e0e;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 540px) {
+  .profile-h2 {
+    font-size: 20px;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .profile-h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .about-me {
   width: 50%;
   margin-left: 40%;
@@ -440,28 +464,14 @@ section div .profile-title {
   .about-me {
     margin-bottom: 70px;
     margin-left: 11%;
-    margin-right: 5%;
+    margin-right: 0;
+    width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me {
     margin-left: 24.3055555556%;
     margin-right: 10vw;
-  }
-}
-.about-me h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10%;
-}
-@media screen and (max-width: 540px) {
-  .about-me h2 {
-    font-size: 20px;
-    margin-bottom: 10%;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .about-me h2 {
-    font-size: 1.5rem;
   }
 }
 .about-me .about-me-text {
@@ -489,7 +499,8 @@ section div .profile-title {
 @media screen and (max-width: 540px) {
   .skils {
     margin-left: 11%;
-    margin-right: 5%;
+    margin-right: 0;
+    width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
@@ -497,21 +508,6 @@ section div .profile-title {
     margin-left: 24.3055555556%;
     margin-right: 10px;
     margin-bottom: 50px;
-  }
-}
-.skils h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10%;
-}
-@media screen and (max-width: 540px) {
-  .skils h2 {
-    font-size: 20px;
-    margin-bottom: 44px;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .skils h2 {
-    font-size: 1.5rem;
   }
 }
 .skils h3 {
