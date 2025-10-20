@@ -22,7 +22,7 @@
   line-height: normal;
   font-weight: $light;
   font-size: $font-size-large;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 
   @include mq(sp) {
     width: 8rem;
@@ -63,7 +63,7 @@ section div .profile-title {
   font-size: $font-size-large;
   letter-spacing: 0.2rem;
   transition: color 0.5s;
-  font-family: monospace;
+  font-family: $title-font;
 
   @include mq(sp) {
     font-size: $font-size-medium;
@@ -87,6 +87,7 @@ section div .profile-title {
 //共通クラス
 .profile-h2 {
   font-family: $main-font-en;
+  letter-spacing: 0.1rem;
   font-size: $font-size-medium;
   margin-bottom: 10%;
   border-bottom: 1px solid $black;
@@ -99,6 +100,7 @@ section div .profile-title {
 
   @include mq(tab) {
     font-size: $font-size-medium;
+    margin-bottom: 5%;
   }
 }
 
@@ -116,13 +118,17 @@ section div .profile-title {
   }
 
   @include mq(tab) {
-    margin-left: calc(350 / 1440 * 100%);
-    margin-right: 10vw;
+    margin: 10vw;
+    width: 80vw;
   }
 
   .about-me-text {
-    line-height: 1.5;
+    line-height: 1.8;
     width: 100%;
+    font-family: $main-font-jp;
+    letter-spacing: 0.05rem;
+    font-weight: $normal;
+    font-size: $font-size-nomal;
 
     @include mq(sp) {
       line-height: 1.5;
@@ -130,8 +136,8 @@ section div .profile-title {
     }
 
     @include mq(tab) {
-      margin-left: 100px;
-      letter-spacing: 0.02em;
+      margin-left: 0;
+      letter-spacing: 0.05em;
     }
   }
 }
@@ -148,9 +154,8 @@ section div .profile-title {
   }
 
   @include mq(tab) {
-    margin-left: calc(350 / 1440 * 100%);
-    margin-right: 10px;
-    margin-bottom: 50px;
+    margin: 10vw;
+    width: 80vw;
   }
 
   h3 {
@@ -168,14 +173,16 @@ section div .profile-title {
     }
 
     @include mq(tab) {
-      margin-left: 100px;
+      margin-left: 0;
     }
-  }
 
-  p {
-    @include mq(sp) {
-      margin-bottom: 50px;
-      line-height: 1.5;
+    .skils-design {
+      h3 {
+        @include mq(sp) {
+          margin-bottom: 50px;
+          line-height: 1.5;
+        }
+      }
     }
   }
 }

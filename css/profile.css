@@ -178,7 +178,7 @@ body {
   margin-bottom: 0;
 }
 .navigation__list li a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   text-decoration: none;
@@ -292,9 +292,10 @@ body {
 }
 
 h1 {
-  font-family: "monospace";
-  font-weight: 300;
+  font-family: "montserrat";
+  font-weight: 400;
   font-size: 3rem;
+  letter-spacing: 0.2rem;
 }
 h1:hover {
   transition: 0.5s;
@@ -321,11 +322,11 @@ h1.h1--hover {
   }
 }
 .page-link h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
-  margin-top: 174px;
-  margin-bottom: 117px;
+  margin-top: 15vw;
+  margin-bottom: 10vw;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
 }
@@ -341,10 +342,10 @@ h1.h1--hover {
   text-align: center;
   display: block;
   padding: 0;
-  margin-bottom: 64px;
+  margin-bottom: 5vw;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 @media screen and (max-width: 540px) {
   .page-link li a {
@@ -372,7 +373,7 @@ h1.h1--hover {
   line-height: normal;
   font-weight: 300;
   font-size: 2.25rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 @media screen and (max-width: 540px) {
   .typing-effect-profile {
@@ -412,7 +413,7 @@ section div .profile-title {
   font-size: 2.25rem;
   letter-spacing: 0.2rem;
   transition: color 0.5s;
-  font-family: monospace;
+  font-family: "montserrat";
 }
 @media screen and (max-width: 540px) {
   section div .profile-title {
@@ -436,7 +437,8 @@ section div .profile-title {
 }
 
 .profile-h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.1rem;
   font-size: 1.5rem;
   margin-bottom: 10%;
   border-bottom: 1px solid #0e0e0e;
@@ -451,6 +453,7 @@ section div .profile-title {
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .profile-h2 {
     font-size: 1.5rem;
+    margin-bottom: 5%;
   }
 }
 
@@ -470,13 +473,15 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me {
-    margin-left: 24.3055555556%;
-    margin-right: 10vw;
+    margin: 10vw;
+    width: 80vw;
   }
 }
 .about-me .about-me-text {
-  line-height: 1.5;
+  line-height: 1.8;
   width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05rem;
 }
 @media screen and (max-width: 540px) {
   .about-me .about-me-text {
@@ -486,8 +491,8 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me .about-me-text {
-    margin-left: 100px;
-    letter-spacing: 0.02em;
+    margin-left: 0;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -505,9 +510,8 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .skils {
-    margin-left: 24.3055555556%;
-    margin-right: 10px;
-    margin-bottom: 50px;
+    margin: 10vw;
+    width: 80vw;
   }
 }
 .skils h3 {
@@ -526,7 +530,7 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .skils .skils-right {
-    margin-left: 100px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 540px) {
