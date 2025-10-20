@@ -1,11 +1,15 @@
 @charset "UTF-8";
 html {
   font-size: 16px;
-  cursor: none;
 }
 
-a:hover {
-  cursor: none;
+html,
+body,
+a,
+img,
+button,
+* {
+  cursor: none !important;
 }
 
 body {
@@ -340,6 +344,7 @@ h1.h1--hover {
   margin-bottom: 64px;
   color: #fdfdfd;
   letter-spacing: 0.3rem;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 540px) {
   .page-link li a {
