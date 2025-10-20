@@ -19,8 +19,8 @@ $blue: #52c1ff;
 
 // フォント
 $main-font-jp: "Noto Sans JP", sans-serif;
-$main-font-en: "Roboto", sans-serif;
-$title-font: "monospace";
+$main-font-en: "Noto Sans", sans-serif;
+$title-font: "montserrat";
 $light: 300;
 $normal: 400;
 $bold: 700;
@@ -358,8 +358,9 @@ body {
 
 h1 {
   font-family: $title-font;
-  font-weight: $light;
+  font-weight: $normal;
   font-size: $font-size-xlarge;
+  letter-spacing: 0.2rem;
 
   // letter-spacing: 0.2rem;
 
@@ -390,8 +391,8 @@ h1.h1--hover {
     font-family: $main-font-en;
     font-weight: $light;
     font-size: $font-size-large;
-    margin-top: 174px;
-    margin-bottom: 117px;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
     color: $white;
     letter-spacing: 0.3rem;
 
@@ -406,7 +407,7 @@ h1.h1--hover {
     text-align: center;
     display: block;
     padding: 0;
-    margin-bottom: 64px;
+    margin-bottom: 5vw;
     color: $white;
     letter-spacing: 0.3rem;
     font-family: $main-font-en;
