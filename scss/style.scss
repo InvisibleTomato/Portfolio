@@ -48,6 +48,10 @@ body {
   color: $black;
   background-color: $white;
 }
+html,
+body {
+  font-family: $main-font-jp, sans-serif;
+}
 
 //スクロール禁止
 #no-scroll {
