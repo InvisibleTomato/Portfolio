@@ -18,6 +18,11 @@ body {
   background-color: #fdfdfd;
 }
 
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif, sans-serif;
+}
+
 #no-scroll {
   overflow: hidden;
 }
