@@ -93,6 +93,7 @@ body {
 .sp-only p {
   line-height: 1.5;
   font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 .sp-only a {
   display: block;
@@ -101,7 +102,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 2%;
   margin-bottom: 64px;
@@ -188,7 +189,7 @@ body {
   font-weight: 300;
   text-decoration: none;
   color: #0e0e0e;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 /*マウスカーソル*/
@@ -300,7 +301,7 @@ h1 {
   font-family: "montserrat";
   font-weight: 400;
   font-size: 3rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.05em;
 }
 h1:hover {
   transition: 0.5s;
@@ -333,7 +334,7 @@ h1.h1--hover {
   margin-top: 15vw;
   margin-bottom: 10vw;
   color: #fdfdfd;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 540px) {
   .page-link h2 {
@@ -349,7 +350,7 @@ h1.h1--hover {
   padding: 0;
   margin-bottom: 5vw;
   color: #fdfdfd;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2em;
   font-family: "Noto Sans", sans-serif;
 }
 @media screen and (max-width: 540px) {
@@ -380,7 +381,6 @@ img {
   line-height: normal;
   font-weight: 300;
   font-size: 2.25rem;
-  letter-spacing: 0.02em;
 }
 @media screen and (max-width: 540px) {
   .typing-effect-gallery {
@@ -419,7 +419,7 @@ img {
 
 section div .gallery-list-title {
   font-size: 2.25rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.2em;
   transition: color 0.5s;
 }
 @media screen and (max-width: 540px) {
@@ -472,7 +472,7 @@ section div .gallery-list-title {
 }
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper ul li {
-    margin-bottom: 10vw;
+    margin-bottom: 12vw;
   }
 }
 .gallery-list-wrapper ul li a img {
@@ -494,6 +494,7 @@ section div .gallery-list-title {
   font-size: 1.5rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
+  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper ul li h2 {
@@ -505,7 +506,7 @@ section div .gallery-list-title {
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 
 .gallery-list-wrapper-title {
@@ -514,6 +515,7 @@ section div .gallery-list-title {
   margin-bottom: 5vw;
   border-bottom: 1px solid #0e0e0e;
   padding-bottom: 3%;
+  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper-title {

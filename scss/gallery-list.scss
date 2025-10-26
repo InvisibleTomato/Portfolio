@@ -24,7 +24,6 @@ img {
   line-height: normal;
   font-weight: $light;
   font-size: $font-size-large;
-  letter-spacing: 0.02em;
 
   @include mq(sp) {
     width: 8rem;
@@ -63,7 +62,7 @@ img {
 }
 section div .gallery-list-title {
   font-size: $font-size-large;
-  letter-spacing: 0.2rem;
+  letter-spacing: $spacing-page-title;
   transition: color 0.5s;
 
   @include mq(sp) {
@@ -111,7 +110,7 @@ section div .gallery-list-title {
       margin-bottom: 5vw;
 
       @include mq(sp) {
-        margin-bottom: 10vw;
+        margin-bottom: 12vw;
       }
 
       a img {
@@ -135,6 +134,7 @@ section div .gallery-list-title {
         font-size: $font-size-medium;
         font-family: $main-font-en;
         font-weight: $light;
+        letter-spacing: $spacing-text-en;
 
         @include mq(sp) {
           margin-top: 5vw;
@@ -145,7 +145,7 @@ section div .gallery-list-title {
         font-family: $main-font-en;
         font-weight: $light;
         line-height: 1;
-        letter-spacing: 0.05rem;
+        letter-spacing: $spacing-text-en;
       }
     }
   }
@@ -157,6 +157,7 @@ section div .gallery-list-title {
   margin-bottom: 5vw;
   border-bottom: 1px solid $black;
   padding-bottom: 3%;
+  letter-spacing: $spacing-text-en;
 
   @include mq(sp) {
     margin-bottom: 10vw;
