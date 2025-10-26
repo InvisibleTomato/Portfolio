@@ -248,8 +248,8 @@ body {
 }
 
 .typing-effect-top {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 23ch;
+  max-width: 23ch;
   animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -321,6 +321,7 @@ h1.h1--hover {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 15vw;
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .page-link {
@@ -331,8 +332,7 @@ h1.h1--hover {
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
-  margin-top: 15vw;
-  margin-bottom: 10vw;
+  margin-bottom: 7vw;
   color: #fdfdfd;
   letter-spacing: 0.2em;
 }
@@ -348,7 +348,7 @@ h1.h1--hover {
   text-align: center;
   display: block;
   padding: 0;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
   color: #fdfdfd;
   letter-spacing: 0.2em;
   font-family: "Noto Sans", sans-serif;
@@ -370,7 +370,8 @@ img {
 }
 
 .typing-effect-gallery {
-  width: 11rem;
+  width: 190px;
+  max-width: 190px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

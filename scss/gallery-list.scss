@@ -12,7 +12,8 @@ img {
 
 //タイピング
 .typing-effect-gallery {
-  width: 11rem;
+  width: 190px;
+  max-width: 190px;
   animation: typing 1s steps(8) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
