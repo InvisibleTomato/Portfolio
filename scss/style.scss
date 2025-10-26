@@ -315,7 +315,8 @@ body {
   width: 23ch;
   max-width: 23ch;
   // アニメーション設定
-  animation: typing 6s steps(46) forwards, effect 1s step-end infinite alternate;
+  animation: typing 6s steps(46) forwards,
+    effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid $black;

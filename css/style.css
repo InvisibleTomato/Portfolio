@@ -249,7 +249,7 @@ body {
 .typing-effect-top {
   width: 23ch;
   max-width: 23ch;
-  animation: typing 6s steps(46) forwards, effect 1s step-end infinite alternate;
+  animation: typing 6s steps(46) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
