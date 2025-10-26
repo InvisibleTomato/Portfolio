@@ -22,7 +22,6 @@
   line-height: normal;
   font-weight: $light;
   font-size: $font-size-large;
-  letter-spacing: 0.03em;
 
   @include mq(sp) {
     width: 8rem;
@@ -61,7 +60,7 @@
 
 section div .profile-title {
   font-size: $font-size-large;
-  letter-spacing: 0.2rem;
+  letter-spacing: $spacing-page-title;
   transition: color 0.5s;
   font-family: $title-font;
 
@@ -80,55 +79,75 @@ section div .profile-title {
   }
 
   @include mq(tab) {
-    margin-top: 200px;
+    width: 80vw;
+    margin: 25vw auto 0 auto;
   }
 }
 
 //共通クラス
 .profile-h2 {
   font-family: $main-font-en;
-  letter-spacing: 0.1rem;
+  letter-spacing: $spacing-text-en;
   font-size: $font-size-medium;
-  margin-bottom: 10%;
+  margin-bottom: 2vw;
   border-bottom: 1px solid $black;
   padding-bottom: 3%;
 
   @include mq(sp) {
     font-size: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 7vw;
   }
 
   @include mq(tab) {
     font-size: $font-size-medium;
-    margin-bottom: 5%;
+    margin-bottom: 5vw;
+  }
+}
+
+.skills-h3 {
+  font-family: $main-font-en;
+  margin-bottom: 1vw;
+  line-height: 1.5;
+  letter-spacing: $spacing-text-en;
+  @include mq(sp) {
+    margin-bottom: 4vw;
+  }
+}
+
+.skills-p {
+  font-family: $main-font-en;
+  letter-spacing: $spacing-text-en;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+
+  @include mq(sp) {
+    margin-bottom: 10vw;
   }
 }
 
 .about-me {
   width: 50%;
-  margin-left: 40%;
-  margin-bottom: 114px;
+  margin-left: 40vw;
+  margin-bottom: 7vw;
   line-height: 1.5;
 
   @include mq(sp) {
-    margin-bottom: 70px;
-    margin-left: 11%;
-    margin-right: 0;
+    margin: 0 auto 15vw auto;
     width: 80vw;
   }
 
   @include mq(tab) {
     margin: 10vw;
-    width: 80vw;
+    width: 60vw;
   }
 
   .about-me-text {
     line-height: 1.8;
     width: 100%;
     font-family: $main-font-jp;
-    letter-spacing: 0.05rem;
+    letter-spacing: $spacing-text-jp;
     font-weight: $normal;
-    font-size: $font-size-nomal;
+    font-size: $font-size-normal;
 
     @include mq(sp) {
       line-height: 1.5;
@@ -137,52 +156,32 @@ section div .profile-title {
 
     @include mq(tab) {
       margin-left: 0;
-      letter-spacing: 0.05em;
     }
   }
 }
 
-.skils {
+.skills {
   width: 50%;
-  margin-left: 40%;
+  margin-left: 40vw;
   margin-bottom: 5vw;
 
   @include mq(sp) {
-    margin-left: 11%;
-    margin-right: 0;
+    margin: 0 auto;
     width: 80vw;
   }
 
   @include mq(tab) {
     margin: 10vw;
-    width: 80vw;
+    width: 60vw;
   }
 
-  h3 {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-
-    @include mq(sp) {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .skils-right {
+  .skills-wrapper {
     @include mq(sp) {
       margin-left: 0;
     }
 
     @include mq(tab) {
       margin-left: 0;
-    }
-
-    .skils-design {
-      h3 {
-        @include mq(sp) {
-          margin-bottom: 50px;
-          line-height: 1.5;
-        }
-      }
     }
   }
 }

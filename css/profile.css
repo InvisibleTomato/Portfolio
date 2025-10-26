@@ -18,6 +18,11 @@ body {
   background-color: #fdfdfd;
 }
 
+html,
+body {
+  font-family: "Noto Sans JP", sans-serif, sans-serif;
+}
+
 #no-scroll {
   overflow: hidden;
 }
@@ -88,6 +93,7 @@ body {
 .sp-only p {
   line-height: 1.5;
   font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 .sp-only a {
   display: block;
@@ -96,7 +102,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 2%;
   margin-bottom: 64px;
@@ -183,7 +189,7 @@ body {
   font-weight: 300;
   text-decoration: none;
   color: #0e0e0e;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 /*マウスカーソル*/
@@ -295,7 +301,7 @@ h1 {
   font-family: "montserrat";
   font-weight: 400;
   font-size: 3rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.05em;
 }
 h1:hover {
   transition: 0.5s;
@@ -328,7 +334,7 @@ h1.h1--hover {
   margin-top: 15vw;
   margin-bottom: 10vw;
   color: #fdfdfd;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 540px) {
   .page-link h2 {
@@ -344,7 +350,7 @@ h1.h1--hover {
   padding: 0;
   margin-bottom: 5vw;
   color: #fdfdfd;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2em;
   font-family: "Noto Sans", sans-serif;
 }
 @media screen and (max-width: 540px) {
@@ -373,7 +379,6 @@ h1.h1--hover {
   line-height: normal;
   font-weight: 300;
   font-size: 2.25rem;
-  letter-spacing: 0.03em;
 }
 @media screen and (max-width: 540px) {
   .typing-effect-profile {
@@ -411,7 +416,7 @@ h1.h1--hover {
 
 section div .profile-title {
   font-size: 2.25rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.2em;
   transition: color 0.5s;
   font-family: "montserrat";
 }
@@ -432,56 +437,81 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .profile-wrapper {
-    margin-top: 200px;
+    width: 80vw;
+    margin: 25vw auto 0 auto;
   }
 }
 
 .profile-h2 {
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05em;
   font-size: 1.5rem;
-  margin-bottom: 10%;
+  margin-bottom: 2vw;
   border-bottom: 1px solid #0e0e0e;
   padding-bottom: 3%;
 }
 @media screen and (max-width: 540px) {
   .profile-h2 {
     font-size: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 7vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .profile-h2 {
     font-size: 1.5rem;
-    margin-bottom: 5%;
+    margin-bottom: 5vw;
+  }
+}
+
+.skills-h3 {
+  font-family: "Noto Sans", sans-serif;
+  margin-bottom: 1vw;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 540px) {
+  .skills-h3 {
+    margin-bottom: 4vw;
+  }
+}
+
+.skills-p {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 540px) {
+  .skills-p {
+    margin-bottom: 10vw;
   }
 }
 
 .about-me {
   width: 50%;
-  margin-left: 40%;
-  margin-bottom: 114px;
+  margin-left: 40vw;
+  margin-bottom: 7vw;
   line-height: 1.5;
 }
 @media screen and (max-width: 540px) {
   .about-me {
-    margin-bottom: 70px;
-    margin-left: 11%;
-    margin-right: 0;
+    margin: 0 auto 15vw auto;
     width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me {
     margin: 10vw;
-    width: 80vw;
+    width: 60vw;
   }
 }
 .about-me .about-me-text {
   line-height: 1.8;
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 1rem;
 }
 @media screen and (max-width: 540px) {
   .about-me .about-me-text {
@@ -492,50 +522,33 @@ section div .profile-title {
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me .about-me-text {
     margin-left: 0;
-    letter-spacing: 0.05em;
   }
 }
 
-.skils {
+.skills {
   width: 50%;
-  margin-left: 40%;
+  margin-left: 40vw;
   margin-bottom: 5vw;
 }
 @media screen and (max-width: 540px) {
-  .skils {
-    margin-left: 11%;
-    margin-right: 0;
+  .skills {
+    margin: 0 auto;
     width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .skils {
+  .skills {
     margin: 10vw;
-    width: 80vw;
-  }
-}
-.skils h3 {
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
-}
-@media screen and (max-width: 540px) {
-  .skils h3 {
-    margin-bottom: 1rem;
+    width: 60vw;
   }
 }
 @media screen and (max-width: 540px) {
-  .skils .skils-right {
+  .skills .skills-wrapper {
     margin-left: 0;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .skils .skils-right {
+  .skills .skills-wrapper {
     margin-left: 0;
-  }
-}
-@media screen and (max-width: 540px) {
-  .skils p {
-    margin-bottom: 50px;
-    line-height: 1.5;
   }
 }
