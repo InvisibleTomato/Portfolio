@@ -312,8 +312,8 @@ body {
 
 // タイピングアニメーション改善版
 .typing-effect-top {
-  width: 23ch;
-  max-width: 23ch;
+  width: 580px;
+  max-width: 580px;
   // アニメーション設定
   animation: typing 6s steps(46) forwards,
     effect 0.5s step-end infinite alternate;
