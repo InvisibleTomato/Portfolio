@@ -94,12 +94,10 @@ body {
   // h1とリンクのテキストを読みやすくするための調整
   .page-link h2,
   .page-link li a {
-    position: relative;
     z-index: 10; // カーソルより前面に
   }
 
   .typing-effect-top {
-    position: relative;
     z-index: 10; // カーソルより前面に
   }
 }
@@ -309,6 +307,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 // タイピングアニメーション改善版
@@ -390,7 +389,10 @@ h1.h1--hover {
   height: auto;
   margin: 0 auto;
   width: fit-content;
-  margin-top: 15vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   @include mq(tab) {
     margin-top: 10%;
