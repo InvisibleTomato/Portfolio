@@ -313,10 +313,10 @@ body {
 
 // タイピングアニメーション改善版
 .typing-effect-top {
-  width: fit-content;
+  width: 23ch;
+  max-width: 23ch;
   // アニメーション設定
-  animation: typing 3s steps(23) forwards,
-    effect 0.5s step-end infinite alternate;
+  animation: typing 6s steps(46) forwards, effect 1s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid $black;
@@ -390,6 +390,7 @@ h1.h1--hover {
   height: auto;
   margin: 0 auto;
   width: fit-content;
+  margin-top: 15vw;
 
   @include mq(tab) {
     margin-top: 10%;
@@ -399,8 +400,7 @@ h1.h1--hover {
     font-family: $main-font-en;
     font-weight: $light;
     font-size: $font-size-large;
-    margin-top: 15vw;
-    margin-bottom: 10vw;
+    margin-bottom: 7vw;
     color: $white;
     letter-spacing: $spacing-page-title;
 
@@ -415,7 +415,7 @@ h1.h1--hover {
     text-align: center;
     display: block;
     padding: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
     color: $white;
     letter-spacing: $spacing-page-title;
     font-family: $main-font-en;
