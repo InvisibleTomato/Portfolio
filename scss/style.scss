@@ -31,6 +31,11 @@ $font-size-medium: 1.5rem; //24px
 $font-size-large: 2.25rem; //36px
 $font-size-xlarge: 3rem; //48px
 
+//レタースペーシング
+$spacing-text-jp: 0.03em;
+$spacing-text-en: 0.05em;
+$spacing-page-title: 0.2em;
+
 html {
   font-size: 16px;
 }
@@ -139,6 +144,7 @@ body {
   p {
     line-height: 1.5;
     font-size: $font-size-normal;
+    letter-spacing: $spacing-text-jp;
   }
   a {
     display: block;
@@ -147,7 +153,7 @@ body {
     text-decoration: none;
     font-size: $font-size-normal;
     font-weight: $light;
-    letter-spacing: 0.1em;
+    letter-spacing: $spacing-text-jp;
     text-align: center;
     padding-bottom: 2%;
     margin-bottom: 64px;
@@ -243,7 +249,7 @@ body {
         font-weight: $light;
         text-decoration: none;
         color: $black;
-        letter-spacing: 0.1em;
+        letter-spacing: $spacing-text-en;
       }
     }
   }
@@ -364,9 +370,7 @@ h1 {
   font-family: $title-font;
   font-weight: $normal;
   font-size: $font-size-xlarge;
-  letter-spacing: 0.2rem;
-
-  // letter-spacing: 0.2rem;
+  letter-spacing: $spacing-text-en;
 
   &:hover {
     transition: 0.5s;
@@ -398,7 +402,7 @@ h1.h1--hover {
     margin-top: 15vw;
     margin-bottom: 10vw;
     color: $white;
-    letter-spacing: 0.3rem;
+    letter-spacing: $spacing-page-title;
 
     @include mq(sp) {
       font-size: $font-size-medium;
@@ -413,7 +417,7 @@ h1.h1--hover {
     padding: 0;
     margin-bottom: 5vw;
     color: $white;
-    letter-spacing: 0.3rem;
+    letter-spacing: $spacing-page-title;
     font-family: $main-font-en;
 
     @include mq(sp) {
