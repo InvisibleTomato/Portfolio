@@ -370,8 +370,7 @@ h1.h1--hover {
 }
 
 .typing-effect-profile {
-  width: 190px;
-  max-width: 190px;
+  width: 490px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -381,13 +380,17 @@ h1.h1--hover {
   left: 10%;
   line-height: normal;
   font-weight: 300;
-  font-size: 2.25rem;
 }
 @media screen and (max-width: 540px) {
   .typing-effect-profile {
-    width: 8rem;
+    width: 320px;
     animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
     white-space: nowrap;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .typing-effect-profile {
+    width: 320px;
   }
 }
 
@@ -424,6 +427,11 @@ section div .profile-title {
   font-family: "montserrat";
 }
 @media screen and (max-width: 540px) {
+  section div .profile-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
   section div .profile-title {
     font-size: 1.5rem;
   }
