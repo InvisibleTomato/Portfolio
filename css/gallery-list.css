@@ -47,11 +47,9 @@ body {
   }
   .page-link h2,
   .page-link li a {
-    position: relative;
     z-index: 10;
   }
   .typing-effect-top {
-    position: relative;
     z-index: 10;
   }
 }
@@ -245,12 +243,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .typing-effect-top {
-  width: 23ch;
-  max-width: 23ch;
-  animation: typing 3s steps(23) forwards, effect 0.5s step-end infinite alternate;
+  width: 580px;
+  max-width: 580px;
+  animation: typing 6s steps(46) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
@@ -321,7 +320,10 @@ h1.h1--hover {
   margin: 0 auto;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 15vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .page-link {
