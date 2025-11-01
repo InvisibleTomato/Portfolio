@@ -11,6 +11,7 @@
 
 .typing-effect-profile {
   width: 490px;
+  max-width: 490px;
   animation: typing 1s steps(8) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
