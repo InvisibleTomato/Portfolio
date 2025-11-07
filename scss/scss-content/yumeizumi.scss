@@ -1,0 +1,192 @@
+@use "../scss/style" as *;
+
+//h3のフォントサイズを定義
+$font-size-h3: 1.25rem;
+
+// プロフィールページ専用のタイピングスタイル
+.typing {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 270px;
+}
+
+.typing-effect-contents {
+  width: 490px;
+  max-width: 490px;
+  animation: typing 1s steps(8) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  line-height: normal;
+  font-weight: $light;
+
+  @include mq(sp) {
+    width: 320px;
+    animation: typing 1s steps(8) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+
+  @include mq(tab) {
+    width: 320px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//profile h1タイトル
+.contents-title-container {
+  margin-top: 168px;
+  margin-right: calc(1011 / 1440 * 100%);
+
+  @include mq(sp) {
+    margin-right: calc(200 / 402 * 100%);
+    margin-top: 100px;
+  }
+
+  @include mq(tab) {
+    margin-right: calc(200 / 402 * 100%);
+  }
+}
+
+section div .contents-title {
+  font-size: $font-size-large;
+  letter-spacing: $spacing-page-title;
+  transition: color 0.5s;
+  font-family: $title-font;
+
+  @include mq(sp) {
+    font-size: $font-size-medium;
+  }
+
+  @include mq(tab) {
+    font-size: $font-size-medium;
+  }
+}
+
+//contents-wrapper
+.contents-wrapper {
+  display: block;
+  margin-top: 10vw;
+
+  @include mq(sp) {
+    margin-top: 40vw;
+  }
+
+  @include mq(tab) {
+    width: 80vw;
+    margin: 25vw auto 0 auto;
+  }
+}
+
+//共通クラス
+.contents-h2 {
+  font-family: $main-font-en;
+  letter-spacing: $spacing-text-en;
+  font-size: $font-size-medium;
+  margin-bottom: 2vw;
+  border-bottom: 1px solid $black;
+  padding-bottom: 3%;
+
+  @include mq(sp) {
+    font-size: 20px;
+    margin-bottom: 7vw;
+  }
+
+  @include mq(tab) {
+    font-size: $font-size-medium;
+    margin-bottom: 5vw;
+  }
+}
+
+.contents-block {
+  width: 50%;
+  margin-left: 40vw;
+  margin-bottom: 7vw;
+  line-height: 1.5;
+
+  @include mq(sp) {
+    margin: 0 auto 15vw auto;
+    width: 80vw;
+  }
+
+  @include mq(tab) {
+    margin: 10vw;
+    width: 60vw;
+  }
+
+  .contents-block-text {
+    line-height: 1.8;
+    width: 100%;
+    font-family: $main-font-jp;
+    letter-spacing: $spacing-text-jp;
+    font-weight: $normal;
+    font-size: $font-size-normal;
+
+    @include mq(sp) {
+      line-height: 1.5;
+      margin-left: 0;
+    }
+
+    @include mq(tab) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contents-img1 {
+  width: 100%;
+}
+
+.contents-h3 {
+  font-family: $main-font-en;
+  letter-spacing: $spacing-text-en;
+  font-size: $font-size-h3;
+  margin-bottom: 5px;
+
+  @include mq(sp) {
+    font-size: 20px;
+    margin-bottom: 7vw;
+  }
+
+  @include mq(tab) {
+    font-size: $font-size-medium;
+    margin-bottom: 5vw;
+  }
+}
+
+.target {
+  margin-bottom: 2vw;
+}
+
+a img {
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+a img:hover {
+  transform: scale(1.08);
+  opacity: 0.8;
+  z-index: 10;
+}
