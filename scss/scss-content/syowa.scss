@@ -162,17 +162,25 @@ section div .contents-title {
 
   @include mq(sp) {
     font-size: 20px;
-    margin-bottom: 7vw;
+    margin-bottom: 2vw;
   }
 
   @include mq(tab) {
     font-size: $font-size-medium;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
   }
 }
 
 .target {
   margin-bottom: 2vw;
+
+  @include mq(sp) {
+    margin-bottom: 8vw;
+  }
+
+  @include mq(tab) {
+    margin-bottom: 5vw;
+  }
 }
 
 a img {
