@@ -370,9 +370,9 @@ h1.h1--hover {
   margin-top: 270px;
 }
 
-.typing-effect-profile {
-  width: 490px;
-  max-width: 490px;
+.typing-effect-contents {
+  width: 410px;
+  max-width: 410px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -384,14 +384,14 @@ h1.h1--hover {
   font-weight: 300;
 }
 @media screen and (max-width: 540px) {
-  .typing-effect-profile {
+  .typing-effect-contents {
     width: 320px;
     animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
     white-space: nowrap;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .typing-effect-profile {
+  .typing-effect-contents {
     width: 320px;
   }
 }
@@ -406,56 +406,56 @@ h1.h1--hover {
     border-color: transparent;
   }
 }
-.profile-title-container {
+.contents-title-container {
   margin-top: 168px;
   margin-right: 70.2083333333%;
 }
 @media screen and (max-width: 540px) {
-  .profile-title-container {
+  .contents-title-container {
     margin-right: 49.7512437811%;
     margin-top: 100px;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .profile-title-container {
+  .contents-title-container {
     margin-right: 49.7512437811%;
   }
 }
 
-section div .profile-title {
+section div .contents-title {
   font-size: 2.25rem;
   letter-spacing: 0.2em;
   transition: color 0.5s;
   font-family: "montserrat";
 }
 @media screen and (max-width: 540px) {
-  section div .profile-title {
+  section div .contents-title {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  section div .profile-title {
+  section div .contents-title {
     font-size: 1.5rem;
   }
 }
 
-.profile-wrapper {
+.contents-wrapper {
   display: block;
   margin-top: 10vw;
 }
 @media screen and (max-width: 540px) {
-  .profile-wrapper {
+  .contents-wrapper {
     margin-top: 40vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .profile-wrapper {
+  .contents-wrapper {
     width: 80vw;
     margin: 25vw auto 0 auto;
   }
 }
 
-.profile-h2 {
+.contents-h2 {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.05em;
   font-size: 1.5rem;
@@ -464,13 +464,13 @@ section div .profile-title {
   padding-bottom: 3%;
 }
 @media screen and (max-width: 540px) {
-  .profile-h2 {
+  .contents-h2 {
     font-size: 20px;
     margin-bottom: 7vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
-  .profile-h2 {
+  .contents-h2 {
     font-size: 1.5rem;
     margin-bottom: 5vw;
   }

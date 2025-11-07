@@ -9,9 +9,9 @@
   margin-top: 270px;
 }
 
-.typing-effect-profile {
-  width: 490px;
-  max-width: 490px;
+.typing-effect-contents {
+  width: 410px;
+  max-width: 410px;
   animation: typing 1s steps(8) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -48,7 +48,7 @@
 }
 
 //profile h1タイトル
-.profile-title-container {
+.contents-title-container {
   margin-top: 168px;
   margin-right: calc(1011 / 1440 * 100%);
 
@@ -62,7 +62,7 @@
   }
 }
 
-section div .profile-title {
+section div .contents-title {
   font-size: $font-size-large;
   letter-spacing: $spacing-page-title;
   transition: color 0.5s;
@@ -77,8 +77,8 @@ section div .profile-title {
   }
 }
 
-//profile-wrapper
-.profile-wrapper {
+//contents-wrapper
+.contents-wrapper {
   display: block;
   margin-top: 10vw;
 
@@ -93,7 +93,7 @@ section div .profile-title {
 }
 
 //共通クラス
-.profile-h2 {
+.contents-h2 {
   font-family: $main-font-en;
   letter-spacing: $spacing-text-en;
   font-size: $font-size-medium;
