@@ -519,7 +519,7 @@ section div .profile-title {
 }
 @media screen and (max-width: 540px) {
   .about-me .about-me-text {
-    line-height: 1.5;
+    line-height: 1.7;
     margin-left: 0;
   }
 }
