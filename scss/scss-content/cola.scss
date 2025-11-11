@@ -7,13 +7,17 @@
 //h3のフォントサイズを定義
 $font-size-h3: 1.25rem;
 
-// プロフィールページ専用のタイピングスタイル
+// タイピングスタイル
 .typing {
   height: auto;
   display: block;
   margin-left: 10vw;
-  margin-top: 270px;
+  margin-top: 10vw;
   max-width: fit-content;
+
+  @include mq(tab) {
+    margin-top: 20vw;
+  }
 }
 
 .typing-effect-contents {
@@ -24,9 +28,6 @@ $font-size-h3: 1.25rem;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid $black;
-  // position: fixed;
-  // top: 15%;
-  // left: 10%;
   line-height: normal;
   font-weight: $light;
 
@@ -39,7 +40,6 @@ $font-size-h3: 1.25rem;
   }
 
   @include mq(tab) {
-    width: 320px;
   }
 }
 
@@ -57,10 +57,8 @@ $font-size-h3: 1.25rem;
 
 //profile h1タイトル
 .contents-title-container {
-  margin-top: 168px;
-
   @include mq(sp) {
-    margin-top: 20vw;
+    margin-top: 25vw;
   }
 }
 
@@ -75,7 +73,7 @@ section div .contents-title {
   }
 
   @include mq(tab) {
-    font-size: $font-size-medium;
+    font-size: $font-size-large;
   }
 }
 
@@ -90,7 +88,7 @@ section div .contents-title {
 
   @include mq(tab) {
     width: 80vw;
-    margin: 25vw auto 0 auto;
+    margin: 15vw auto 0 auto;
   }
 }
 
@@ -125,8 +123,8 @@ section div .contents-title {
   }
 
   @include mq(tab) {
-    margin: 10vw;
-    width: 60vw;
+    margin: 10vw auto 10vw auto;
+    width: 80vw;
   }
 
   .contents-block-text {
