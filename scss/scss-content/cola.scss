@@ -1,5 +1,9 @@
 @use "../../scss/style.scss" as *;
 
+// * {
+//   outline: 1px solid magenta;
+// }
+
 //h3のフォントサイズを定義
 $font-size-h3: 1.25rem;
 
@@ -8,9 +12,8 @@ $font-size-h3: 1.25rem;
   height: auto;
   display: block;
   margin-left: 8vw;
-  // align-items: center;
-  // justify-content: center;
   margin-top: 270px;
+  max-width: fit-content;
 }
 
 .typing-effect-contents {

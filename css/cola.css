@@ -367,6 +367,8 @@ h1.h1--hover {
   display: block;
   margin-left: 8vw;
   margin-top: 270px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .typing-effect-contents {
