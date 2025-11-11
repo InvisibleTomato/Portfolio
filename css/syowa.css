@@ -365,15 +365,20 @@ h1.h1--hover {
 .typing {
   height: auto;
   display: block;
-  margin-left: 8vw;
-  margin-top: 270px;
+  margin-left: 10vw;
+  margin-top: 10vw;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .typing {
+    margin-top: 20vw;
+  }
+}
 
 .typing-effect-contents {
-  width: 190px;
-  max-width: 190px;
+  width: 490px;
+  max-width: 490px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -389,12 +394,6 @@ h1.h1--hover {
     white-space: nowrap;
   }
 }
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .typing-effect-contents {
-    width: 320px;
-  }
-}
-
 @keyframes typing {
   from {
     width: 0;
@@ -405,19 +404,9 @@ h1.h1--hover {
     border-color: transparent;
   }
 }
-.contents-title-container {
-  margin-top: 168px;
-  margin-right: 70.2083333333%;
-}
 @media screen and (max-width: 540px) {
   .contents-title-container {
-    margin-right: 49.7512437811%;
-    margin-top: 100px;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .contents-title-container {
-    margin-right: 49.7512437811%;
+    margin-top: 25vw;
   }
 }
 
@@ -434,7 +423,7 @@ section div .contents-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   section div .contents-title {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -444,13 +433,13 @@ section div .contents-title {
 }
 @media screen and (max-width: 540px) {
   .contents-wrapper {
-    margin-top: 40vw;
+    margin-top: 20vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .contents-wrapper {
     width: 80vw;
-    margin: 25vw auto 0 auto;
+    margin: 15vw auto 0 auto;
   }
 }
 
@@ -488,8 +477,8 @@ section div .contents-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .contents-block {
-    margin: 10vw;
-    width: 60vw;
+    margin: 10vw auto 10vw auto;
+    width: 80vw;
   }
 }
 .contents-block .contents-block-text {
@@ -563,4 +552,23 @@ a img:hover {
   transform: scale(1.08);
   opacity: 0.8;
   z-index: 10;
+}
+
+.typing-effect-contents {
+  width: 190px;
+  max-width: 190px;
+  animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0e0e0e;
+  line-height: normal;
+  font-weight: 300;
+}
+@media screen and (max-width: 540px) {
+  .typing-effect-contents {
+    width: 110px;
+    max-width: 110px;
+    animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
 }
