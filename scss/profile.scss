@@ -57,17 +57,7 @@
 
 //profile h1タイトル
 .profile-title-container {
-  margin-top: 168px;
-  margin-right: calc(1011 / 1440 * 100%);
-
-  @include mq(sp) {
-    margin-right: 0;
-    margin-top: 20vw;
-  }
-
-  @include mq(tab) {
-    margin-right: 0;
-  }
+  margin-top: 20vw;
 }
 
 section div .profile-title {
@@ -87,7 +77,7 @@ section div .profile-title {
   margin-top: 20vw;
 
   @include mq(sp) {
-    margin-top: 30vw;
+    margin-top: 25vw;
   }
 
   @include mq(tab) {

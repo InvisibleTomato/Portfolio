@@ -415,19 +415,7 @@ h1.h1--hover {
   }
 }
 .profile-title-container {
-  margin-top: 168px;
-  margin-right: 70.2083333333%;
-}
-@media screen and (max-width: 540px) {
-  .profile-title-container {
-    margin-right: 0;
-    margin-top: 20vw;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .profile-title-container {
-    margin-right: 0;
-  }
+  margin-top: 20vw;
 }
 
 section div .profile-title {
@@ -448,7 +436,7 @@ section div .profile-title {
 }
 @media screen and (max-width: 540px) {
   .profile-wrapper {
-    margin-top: 30vw;
+    margin-top: 25vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
