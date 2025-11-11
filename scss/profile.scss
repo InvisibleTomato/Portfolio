@@ -3,10 +3,10 @@
 // プロフィールページ専用のタイピングスタイル
 .typing {
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: 10vw;
   margin-top: 270px;
+  max-width: fit-content;
 }
 
 .typing-effect-profile {
@@ -25,10 +25,21 @@
   font-size: $font-size-large;
 
   @include mq(sp) {
-    width: 8rem;
+    width: 125px;
+    max-width: 125px;
     animation: typing 1s steps(8) forwards,
       effect 0.5s step-end infinite alternate;
     white-space: nowrap;
+    position: static;
+  }
+
+  @include mq(tab) {
+    width: 185px;
+    max-width: 185px;
+    animation: typing 1s steps(8) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    position: static;
   }
 }
 
@@ -50,12 +61,12 @@
   margin-right: calc(1011 / 1440 * 100%);
 
   @include mq(sp) {
-    margin-right: calc(200 / 402 * 100%);
-    margin-top: 100px;
+    margin-right: 0;
+    margin-top: 20vw;
   }
 
   @include mq(tab) {
-    margin-right: calc(200 / 402 * 100%);
+    margin-right: 0;
   }
 }
 
@@ -73,15 +84,15 @@ section div .profile-title {
 //profile-wrapper
 .profile-wrapper {
   display: block;
-  margin-top: 10vw;
+  margin-top: 20vw;
 
   @include mq(sp) {
-    margin-top: 40vw;
+    margin-top: 30vw;
   }
 
   @include mq(tab) {
     width: 80vw;
-    margin: 25vw auto 0 auto;
+    margin: 20vw auto 0 auto;
   }
 }
 
@@ -138,8 +149,8 @@ section div .profile-title {
   }
 
   @include mq(tab) {
-    margin: 10vw;
-    width: 60vw;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .about-me-text {
@@ -172,8 +183,8 @@ section div .profile-title {
   }
 
   @include mq(tab) {
-    margin: 10vw;
-    width: 60vw;
+    margin: 10vw auto 0 auto;
+    width: 100%;
   }
 
   .skills-wrapper {

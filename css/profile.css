@@ -364,10 +364,11 @@ h1.h1--hover {
 
 .typing {
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: 10vw;
   margin-top: 270px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .typing-effect-profile {
@@ -386,9 +387,20 @@ h1.h1--hover {
 }
 @media screen and (max-width: 540px) {
   .typing-effect-profile {
-    width: 8rem;
+    width: 125px;
+    max-width: 125px;
     animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
     white-space: nowrap;
+    position: static;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .typing-effect-profile {
+    width: 185px;
+    max-width: 185px;
+    animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    position: static;
   }
 }
 
@@ -408,13 +420,13 @@ h1.h1--hover {
 }
 @media screen and (max-width: 540px) {
   .profile-title-container {
-    margin-right: 49.7512437811%;
-    margin-top: 100px;
+    margin-right: 0;
+    margin-top: 20vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .profile-title-container {
-    margin-right: 49.7512437811%;
+    margin-right: 0;
   }
 }
 
@@ -432,17 +444,17 @@ section div .profile-title {
 
 .profile-wrapper {
   display: block;
-  margin-top: 10vw;
+  margin-top: 20vw;
 }
 @media screen and (max-width: 540px) {
   .profile-wrapper {
-    margin-top: 40vw;
+    margin-top: 30vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .profile-wrapper {
     width: 80vw;
-    margin: 25vw auto 0 auto;
+    margin: 20vw auto 0 auto;
   }
 }
 
@@ -505,8 +517,8 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .about-me {
-    margin: 10vw;
-    width: 60vw;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 .about-me .about-me-text {
@@ -542,8 +554,8 @@ section div .profile-title {
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .skills {
-    margin: 10vw;
-    width: 60vw;
+    margin: 10vw auto 0 auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 540px) {
