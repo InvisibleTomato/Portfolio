@@ -86,7 +86,7 @@ section div .gallery-list-title {
   width: 100%;
   max-width: 60vw; // コンテンツの最大幅を設定
   // margin-left: calc(443 / 1440 * 100%);
-  margin-top: 20vw;
+  margin-top: 10vw;
   margin-left: 35vw;
   margin-bottom: 15vw;
 
@@ -98,7 +98,7 @@ section div .gallery-list-title {
 
   @include mq(tab) {
     margin: 0 auto;
-    margin-top: 25vw;
+    margin-top: 20vw;
     max-width: 80vw;
   }
   ul {
@@ -120,6 +120,10 @@ section div .gallery-list-title {
 
       @include mq(sp) {
         margin-bottom: 12vw;
+      }
+
+      @include mq(tab) {
+        margin-bottom: 10vw;
       }
 
       a img {
