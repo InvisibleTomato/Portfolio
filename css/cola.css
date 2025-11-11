@@ -365,7 +365,7 @@ h1.h1--hover {
 .typing {
   height: auto;
   display: block;
-  margin-left: 8vw;
+  margin-left: 10vw;
   margin-top: 270px;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -407,17 +407,10 @@ h1.h1--hover {
 }
 .contents-title-container {
   margin-top: 168px;
-  margin-right: 70.2083333333%;
 }
 @media screen and (max-width: 540px) {
   .contents-title-container {
-    margin-right: 49.7512437811%;
-    margin-top: 100px;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  .contents-title-container {
-    margin-right: 49.7512437811%;
+    margin-top: 20vw;
   }
 }
 
@@ -444,7 +437,7 @@ section div .contents-title {
 }
 @media screen and (max-width: 540px) {
   .contents-wrapper {
-    margin-top: 40vw;
+    margin-top: 20vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
