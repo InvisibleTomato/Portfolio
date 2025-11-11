@@ -379,7 +379,7 @@ h1.h1--hover {
 .typing-effect-contents {
   width: 490px;
   max-width: 490px;
-  animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
+  animation: typing 1s steps(13) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
@@ -552,4 +552,31 @@ a img:hover {
   transform: scale(1.08);
   opacity: 0.8;
   z-index: 10;
+}
+
+.typing-effect-contents {
+  width: 540px;
+  max-width: 540px;
+  animation: typing 1s steps(13) forwards, effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0e0e0e;
+  line-height: normal;
+  font-weight: 300;
+}
+@media screen and (max-width: 540px) {
+  .typing-effect-contents {
+    width: 300px;
+    max-width: 300px;
+    animation: typing 1s steps(13) forwards, effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+}
+.contents-img1 {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contents-h2 {
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.05em;
 }

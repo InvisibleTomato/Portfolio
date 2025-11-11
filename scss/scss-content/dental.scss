@@ -1,2 +1,34 @@
 @use "../../scss/style.scss" as *;
 @use "../../scss/scss-content/cola.scss" as *;
+
+.typing-effect-contents {
+  width: 540px;
+  max-width: 540px;
+  animation: typing 1s steps(13) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+  line-height: normal;
+  font-weight: $light;
+
+  @include mq(sp) {
+    width: 300px;
+    max-width: 300px;
+    animation: typing 1s steps(13) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+
+  @include mq(tab) {
+  }
+}
+
+.contents-img1 {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contents-h2 {
+  font-family: $main-font-en;
+  letter-spacing: $spacing-text-en;
+}
