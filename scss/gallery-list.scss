@@ -27,10 +27,16 @@ img {
   font-size: $font-size-large;
 
   @include mq(sp) {
-    width: 8rem;
+    width: 130px;
     animation: typing 1s steps(8) forwards,
       effect 0.5s step-end infinite alternate;
     white-space: nowrap;
+    position: static;
+    margin-left: 10vw;
+  }
+  @include mq(tab) {
+    position: static;
+    margin-left: 10vw;
   }
 }
 
@@ -52,13 +58,15 @@ img {
   margin-right: calc(1011 / 1440 * 100%);
 
   @include mq(sp) {
-    margin-right: calc(200 / 402 * 100%);
-    margin-top: 100px;
+    margin-top: 20vw;
     display: block;
+    margin-right: 0;
   }
 
   @include mq(tab) {
-    margin-right: calc(210 / 402 * 100%);
+    margin-right: 0;
+    margin-top: 20vw;
+    display: block;
   }
 }
 section div .gallery-list-title {
@@ -84,13 +92,13 @@ section div .gallery-list-title {
 
   @include mq(sp) {
     margin: 0 auto;
-    margin-top: 60vw;
+    margin-top: 20vw;
     max-width: 80vw;
   }
 
   @include mq(tab) {
     margin: 0 auto;
-    margin-top: 40vw;
+    margin-top: 25vw;
     max-width: 80vw;
   }
   ul {

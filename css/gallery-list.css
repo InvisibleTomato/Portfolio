@@ -388,9 +388,17 @@ img {
 }
 @media screen and (max-width: 540px) {
   .typing-effect-gallery {
-    width: 8rem;
+    width: 130px;
     animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
     white-space: nowrap;
+    position: static;
+    margin-left: 10vw;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 1024px) {
+  .typing-effect-gallery {
+    position: static;
+    margin-left: 10vw;
   }
 }
 
@@ -410,14 +418,16 @@ img {
 }
 @media screen and (max-width: 540px) {
   .gallery-list-title-container {
-    margin-right: 49.7512437811%;
-    margin-top: 100px;
+    margin-top: 20vw;
     display: block;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .gallery-list-title-container {
-    margin-right: 52.2388059701%;
+    margin-right: 0;
+    margin-top: 20vw;
+    display: block;
   }
 }
 
@@ -443,14 +453,14 @@ section div .gallery-list-title {
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper {
     margin: 0 auto;
-    margin-top: 60vw;
+    margin-top: 20vw;
     max-width: 80vw;
   }
 }
 @media screen and (min-width: 541px) and (max-width: 1024px) {
   .gallery-list-wrapper {
     margin: 0 auto;
-    margin-top: 40vw;
+    margin-top: 25vw;
     max-width: 80vw;
   }
 }
