@@ -367,11 +367,13 @@ h1.h1--hover {
   display: block;
   margin-left: 8vw;
   margin-top: 270px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .typing-effect-contents {
-  width: 490px;
-  max-width: 490px;
+  width: 190px;
+  max-width: 190px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
