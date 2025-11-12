@@ -4,9 +4,6 @@
 //   outline: 1px solid magenta;
 // }
 
-//h3のフォントサイズを定義
-$font-size-h3: 1.25rem;
-
 // タイピングスタイル
 .typing {
   height: auto;
@@ -149,7 +146,7 @@ section div .contents-title {
 .contents-h3 {
   font-family: $main-font-en;
   letter-spacing: $spacing-text-en;
-  font-size: $font-size-h3;
+  font-size: $font-size-sp-title;
   margin-bottom: 5px;
 
   @include mq(sp) {
@@ -158,7 +155,7 @@ section div .contents-title {
   }
 
   @include mq(tab) {
-    font-size: $font-size-medium;
+    font-size: $font-size-sp-title;
     margin-bottom: 2vw;
   }
 }
