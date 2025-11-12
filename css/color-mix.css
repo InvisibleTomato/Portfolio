@@ -553,3 +553,22 @@ a img:hover {
   opacity: 0.8;
   z-index: 10;
 }
+
+.typing-effect-contents {
+  width: 255px;
+  max-width: 255px;
+  animation: typing 1s steps(10) forwards, effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #0e0e0e;
+  line-height: normal;
+  font-weight: 300;
+}
+@media screen and (max-width: 540px) {
+  .typing-effect-contents {
+    width: 142px;
+    max-width: 142px;
+    animation: typing 1s steps(10) forwards, effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+}
