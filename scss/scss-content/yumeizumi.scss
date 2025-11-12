@@ -1,2 +1,100 @@
 @use "../../scss/style.scss" as *;
 @use "../../scss/scss-content/cola.scss" as *;
+
+.typing-effect-contents {
+  width: 72px;
+  max-width: 72px;
+  animation: typing 0.5s steps(4) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+  line-height: normal;
+  font-weight: $light;
+
+  @include mq(sp) {
+    width: 59px;
+    max-width: 59px;
+    animation: typing 0.5s steps(4) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+
+  @include mq(tab) {
+  }
+}
+
+.contents-img1 {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 3vw;
+}
+
+.contents-h2 {
+  font-family: $main-font-en;
+  letter-spacing: $spacing-text-en;
+}
+
+//モーダルのスタイル
+
+/* モーダルと背景の指定 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* モーダルの擬似要素の指定 */
+.modal:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+
+/* クラスが追加された時の指定 */
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modal-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modal-content {
+  max-width: 80vw;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.modal-content img,
+.modal-img {
+  width: 80vw; /* 幅を画面の80%に */
+  height: auto; /* 高さは自動で比率維持 */
+  max-width: 100%; /* コンテナをはみ出さない */
+}
+
+.modal-desc {
+  font-family: $main-font-jp;
+  font-size: $font-size-normal;
+  margin-bottom: 10px;
+  color: $black;
+}
