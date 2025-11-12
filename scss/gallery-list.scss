@@ -151,6 +151,7 @@ section div .gallery-list-title {
 
         @include mq(sp) {
           margin-top: 5vw;
+          font-size: $font-size-sp-title;
         }
       }
       p {
