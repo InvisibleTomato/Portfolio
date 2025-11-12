@@ -2,7 +2,7 @@
 h1 {
   font-family: $title-font;
 
-  font-size: $font-size-large;
+  font-size: $font-size-medium;
 }
 
 img {
@@ -12,8 +12,8 @@ img {
 
 //タイピング
 .typing-effect-gallery {
-  width: 190px;
-  max-width: 190px;
+  width: 127px;
+  max-width: 127px;
   animation: typing 1s steps(8) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -24,7 +24,6 @@ img {
   left: 10%;
   line-height: normal;
   font-weight: $light;
-  font-size: $font-size-large;
 
   @include mq(sp) {
     width: 130px;
@@ -70,7 +69,7 @@ img {
   }
 }
 section div .gallery-list-title {
-  font-size: $font-size-large;
+  font-size: $font-size-medium;
   letter-spacing: $spacing-page-title;
   transition: color 0.5s;
 
@@ -144,7 +143,7 @@ section div .gallery-list-title {
 
       h2 {
         margin: 2vw 0 0 0;
-        font-size: $font-size-medium;
+        font-size: $font-size-sp-title;
         font-family: $main-font-en;
         font-weight: $light;
         letter-spacing: $spacing-text-en;
@@ -167,7 +166,7 @@ section div .gallery-list-title {
 
 .gallery-list-wrapper-title {
   font-family: $main-font-en;
-  font-size: $font-size-medium;
+  font-size: $font-size-sp-title;
   margin-bottom: 5vw;
   border-bottom: 1px solid $black;
   padding-bottom: 3%;

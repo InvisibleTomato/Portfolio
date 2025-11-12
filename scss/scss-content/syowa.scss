@@ -2,8 +2,8 @@
 @use "../../scss/scss-content/cola.scss" as *;
 
 .typing-effect-contents {
-  width: 190px;
-  max-width: 190px;
+  width: 127px;
+  max-width: 127px;
   animation: typing 1s steps(6) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;

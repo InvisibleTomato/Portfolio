@@ -103,7 +103,7 @@ section div .contents-title {
   }
 
   @include mq(tab) {
-    font-size: $font-size-medium;
+    font-size: $font-size-sp-title;
     margin-bottom: 5vw;
   }
 }

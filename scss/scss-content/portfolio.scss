@@ -1,2 +1,23 @@
 @use "../../scss/style.scss" as *;
 @use "../../scss/scss-content/cola.scss" as *;
+
+.typing-effect-contents {
+  width: 158px;
+  max-width: 158px;
+  animation: typing 1s steps(10) forwards,
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid $black;
+
+  line-height: normal;
+  font-weight: $light;
+
+  @include mq(sp) {
+    width: 132px;
+    max-width: 132px;
+    animation: typing 1s steps(10) forwards,
+      effect 0.5s step-end infinite alternate;
+    white-space: nowrap;
+  }
+}
