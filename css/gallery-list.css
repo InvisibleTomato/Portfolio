@@ -518,6 +518,7 @@ section div .gallery-list-title {
 @media screen and (max-width: 540px) {
   .gallery-list-wrapper ul li h2 {
     margin-top: 5vw;
+    font-size: 1.25rem;
   }
 }
 .gallery-list-wrapper ul li p {
