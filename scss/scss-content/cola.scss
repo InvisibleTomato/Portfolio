@@ -21,8 +21,8 @@ $font-size-h3: 1.25rem;
 }
 
 .typing-effect-contents {
-  width: 490px;
-  max-width: 490px;
+  width: 326px;
+  max-width: 326px;
   animation: typing 1s steps(13) forwards,
     effect 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -63,17 +63,13 @@ $font-size-h3: 1.25rem;
 }
 
 section div .contents-title {
-  font-size: $font-size-large;
+  font-size: $font-size-medium;
   letter-spacing: $spacing-page-title;
   transition: color 0.5s;
   font-family: $title-font;
 
   @include mq(sp) {
     font-size: 1.25rem;
-  }
-
-  @include mq(tab) {
-    font-size: $font-size-large;
   }
 }
 
@@ -96,7 +92,7 @@ section div .contents-title {
 .contents-h2 {
   font-family: $main-font-jp;
   letter-spacing: $spacing-text-jp;
-  font-size: $font-size-medium;
+  font-size: $font-size-sp-title;
   margin-bottom: 2vw;
   border-bottom: 1px solid $black;
   padding-bottom: 3%;

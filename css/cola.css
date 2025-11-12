@@ -248,13 +248,13 @@ body {
 }
 
 .typing-effect-top {
-  width: 571px;
-  max-width: 571px;
+  width: 425px;
+  max-width: 425px;
   animation: typing 6s steps(46) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 300;
   position: fixed;
   top: 15%;
@@ -300,7 +300,6 @@ body {
 h1 {
   font-family: "montserrat";
   font-weight: 400;
-  font-size: 3rem;
   letter-spacing: 0.05em;
 }
 h1:hover {
@@ -351,7 +350,7 @@ h1.h1--hover {
   text-align: center;
   display: block;
   padding: 0;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
   color: #fdfdfd;
   letter-spacing: 0.2em;
   font-family: "Noto Sans", sans-serif;
@@ -377,8 +376,8 @@ h1.h1--hover {
 }
 
 .typing-effect-contents {
-  width: 490px;
-  max-width: 490px;
+  width: 326px;
+  max-width: 326px;
   animation: typing 1s steps(13) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -411,7 +410,7 @@ h1.h1--hover {
 }
 
 section div .contents-title {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2em;
   transition: color 0.5s;
   font-family: "montserrat";
@@ -419,11 +418,6 @@ section div .contents-title {
 @media screen and (max-width: 540px) {
   section div .contents-title {
     font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 541px) and (max-width: 1024px) {
-  section div .contents-title {
-    font-size: 2.25rem;
   }
 }
 
@@ -446,7 +440,7 @@ section div .contents-title {
 .contents-h2 {
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.03em;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 2vw;
   border-bottom: 1px solid #0e0e0e;
   padding-bottom: 3%;

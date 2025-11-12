@@ -248,13 +248,13 @@ body {
 }
 
 .typing-effect-top {
-  width: 571px;
-  max-width: 571px;
+  width: 425px;
+  max-width: 425px;
   animation: typing 6s steps(46) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #0e0e0e;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 300;
   position: fixed;
   top: 15%;
@@ -300,7 +300,6 @@ body {
 h1 {
   font-family: "montserrat";
   font-weight: 400;
-  font-size: 3rem;
   letter-spacing: 0.05em;
 }
 h1:hover {
@@ -351,7 +350,7 @@ h1.h1--hover {
   text-align: center;
   display: block;
   padding: 0;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
   color: #fdfdfd;
   letter-spacing: 0.2em;
   font-family: "Noto Sans", sans-serif;
@@ -364,7 +363,7 @@ h1.h1--hover {
 
 h1 {
   font-family: "montserrat";
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 
 img {
@@ -373,8 +372,8 @@ img {
 }
 
 .typing-effect-gallery {
-  width: 190px;
-  max-width: 190px;
+  width: 127px;
+  max-width: 127px;
   animation: typing 1s steps(8) forwards, effect 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -384,7 +383,6 @@ img {
   left: 10%;
   line-height: normal;
   font-weight: 300;
-  font-size: 2.25rem;
 }
 @media screen and (max-width: 540px) {
   .typing-effect-gallery {
@@ -432,7 +430,7 @@ img {
 }
 
 section div .gallery-list-title {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2em;
   transition: color 0.5s;
 }
@@ -510,7 +508,7 @@ section div .gallery-list-title {
 }
 .gallery-list-wrapper ul li h2 {
   margin: 2vw 0 0 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -531,7 +529,7 @@ section div .gallery-list-title {
 
 .gallery-list-wrapper-title {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 5vw;
   border-bottom: 1px solid #0e0e0e;
   padding-bottom: 3%;
