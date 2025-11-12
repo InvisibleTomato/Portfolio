@@ -102,7 +102,7 @@ section div .contents-title {
   padding-bottom: 3%;
 
   @include mq(sp) {
-    font-size: 1.25rem;
+    font-size: $font-size-sp-title;
     margin-bottom: 7vw;
   }
 
@@ -157,7 +157,7 @@ section div .contents-title {
   margin-bottom: 5px;
 
   @include mq(sp) {
-    font-size: 20px;
+    font-size: $font-size-sp-title;
     margin-bottom: 2vw;
   }
 
