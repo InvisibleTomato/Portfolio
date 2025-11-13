@@ -75,6 +75,22 @@ body {
   transform: translateY(0);
 }
 
+.fade-in-loading {
+  /*追加*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(150px);
+}
+
+.fade-active-loading {
+  /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(0);
+}
+
 //スクロール禁止
 #no-scroll {
   overflow: hidden;
