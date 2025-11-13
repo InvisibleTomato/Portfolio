@@ -371,6 +371,22 @@ img {
   height: auto;
 }
 
+.fade-in {
+  /*追加*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(150px);
+}
+
+.fade-active {
+  /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(0);
+}
+
 .typing-effect-gallery {
   width: 127px;
   max-width: 127px;
