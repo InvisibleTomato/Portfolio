@@ -23,6 +23,38 @@ body {
   font-family: "Noto Sans JP", sans-serif, sans-serif;
 }
 
+.fade-in {
+  /*追加*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(150px);
+}
+
+.fade-active {
+  /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(0);
+}
+
+.fade-in-loading {
+  /*追加*/
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(150px);
+}
+
+.fade-active-loading {
+  /*要素を表示させる*/
+  opacity: 1;
+  visibility: visible;
+  /*元の位置に戻す*/
+  transform: translateY(0);
+}
+
 #no-scroll {
   overflow: hidden;
 }
@@ -574,67 +606,4 @@ a img:hover {
 .contents-h2 {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 0.05em;
-}
-
-/* モーダルと背景の指定 */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px 20px;
-  overflow: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  box-sizing: border-box;
-}
-
-/* モーダルの擬似要素の指定 */
-.modal:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-  margin-left: -0.2em;
-}
-
-/* クラスが追加された時の指定 */
-.modal.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* モーダル内側の指定 */
-.modal-container {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 80vw;
-  width: 80vw;
-}
-
-/* モーダルのコンテンツ部分の指定 */
-.modal-content {
-  max-width: 80vw;
-  width: 80vw;
-  height: auto;
-  margin: 0 auto;
-}
-
-.modal-content img,
-.modal-img {
-  width: 80vw; /* 幅を画面の80%に */
-  height: auto; /* 高さは自動で比率維持 */
-  max-width: 100%; /* コンテナをはみ出さない */
-}
-
-.modal-desc {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 12px;
-  margin-bottom: 10px;
-  color: #0e0e0e;
 }

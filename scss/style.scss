@@ -58,6 +58,72 @@ body {
   font-family: $main-font-jp, sans-serif;
 }
 
+//モーダルのスタイル
+
+/* モーダルと背景の指定 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* モーダルの擬似要素の指定 */
+.modal:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+
+/* クラスが追加された時の指定 */
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modal-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 80vw;
+  width: 80vw;
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modal-content {
+  max-width: 80vw;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.modal-content img,
+.modal-img {
+  width: 80vw; /* 幅を画面の80%に */
+  height: auto; /* 高さは自動で比率維持 */
+  max-width: 100%; /* コンテナをはみ出さない */
+}
+
+.modal-desc {
+  font-family: $main-font-jp;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: $black;
+}
+
 //フェードイン
 .fade-in {
   /*追加*/
